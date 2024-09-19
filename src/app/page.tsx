@@ -4,7 +4,7 @@ import { FirstHomeCarrosel } from "./components/FirstHomeCarrosel";
 export default function Home() {
   return (
     <>
-      <section className="w-screen h-screen bg-laranja relative">
+      <section className="w-screen h-[95vh] bg-laranja relative md:h-screen">
         <video src="https://cdn.pixabay.com/video/2022/07/20/124829-732633113_tiny.mp4"
           className="w-full h-full object-fill"
           autoPlay

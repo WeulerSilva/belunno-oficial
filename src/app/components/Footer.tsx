@@ -10,19 +10,19 @@ export default function Footer() {
     return (
         <footer className="w-screen h-[500px] bg-laranja flex flex-col justify-center items-center lg:h-[200px]">
             <div className="w-full h-[16px] border-y-4 border-white"></div>
-            <div className="w-[80%] h-full flex justify-between items-center text-black flex-col pt-6 lg:w-[90%] lg:pt-[55px] lg:flex-row xl:w-[80%]">
-                <div className="w-[70%] h-full flex flex-col justify-start items-center text-justify mb-4 lg:w-[40%] lg:items-start lg:mb-0 xl:w-[35%]">
-                    <span className="text-base font-semibold">BELLUUNÔ INDUSTRÌA DE ALIMENTOS LTDA</span>
-                    <span className="text-[14px] font-semibold">Unidade de Beneficiamento de Carne e Produtos Cárneos</span>
+            <div className="w-[90%] h-full flex justify-between items-center text-black flex-col pt-6 lg:w-[90%] lg:pt-[55px] lg:flex-row xl:w-[80%]">
+                <div className="w-[100%] h-full flex flex-col justify-start items-center mb-4 lg:w-[40%] lg:items-start lg:mb-0 xl:w-[35%]">
+                    <span className="text-[14px] font-semibold">BELLUUNÔ INDUSTRÌA DE ALIMENTOS LTDA</span>
+                    <span className="text-[14px] font-semibold text-center">Unidade de Beneficiamento de Carne e Produtos Cárneos</span>
                     <span className="text-[13px]">Linha Cruzaltinha, 80 - Ciríaco/RS - Brasil</span>
                 </div>
 
-                <div className="w-[70%] h-full flex flex-col justify-start items-center text-black font-semibold lg:w-[20%]">
+                <div className="w-[100%] h-full flex flex-col justify-start items-center text-black font-semibold lg:w-[20%]">
                     <span>qualidade@belunno.com.br</span>
                     <span>+55 (54) 9 9908 3962</span>
                 </div>
 
-                <div className="w-[70%] h-full flex flex-col justify-start lg:w-[10%]">
+                <div className="w-[100%] h-full flex flex-col justify-start lg:w-[10%]">
                     <div className="w-full flex justify-between items-center text-vermelho">
                         <a href="https://www.instagram.com/ank.ilumer/" target="_blank"
                             className="w-[35px] h-[35px] cursor-pointer rounded-full bg-laranja flex justify-center items-center
@@ -43,7 +43,7 @@ export default function Footer() {
                     <AboutSpan text="fale conosco" style="bg-vermelho text-center text-white py-[1px] text-[11px] mt-4" />
                 </div>
 
-                <div className="w-[70%] h-full flex flex-col justify-start items-center lg:items-end lg:w-[20%]">
+                <div className="w-[100%] h-full flex flex-col justify-start items-center lg:items-end lg:w-[20%]">
                     <Link href={"/"}>
                         <div className="w-[200px] h-[70px] bg-belunne bg-contain bg-center bg-no-repeat"></div>
                     </Link>

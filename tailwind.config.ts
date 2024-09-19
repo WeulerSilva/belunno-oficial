@@ -22,7 +22,7 @@ const config: Config = {
       backgroundImage: {
         "belunne": "url('/images/belunno-logo.svg')",
         "first-line": "url('/images/first-line.svg')",
-        "fabric": "url('/images/fabric2.jpg')",
+        "fabric": "url('/images/fabric2.JPG')",
         "four": "url('/images/four-lines.png')",
         "caminhao": "url('/images/caminhao.jpg')",
         "caminhao-icon": "url('/images/caminhao-icon.png')"

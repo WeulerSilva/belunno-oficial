@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { AboutSpan } from "./components/AboutSpan";
 import { FirstHomeCarrosel } from "./components/FirstHomeCarrosel";
 

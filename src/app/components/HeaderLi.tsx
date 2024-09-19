@@ -2,11 +2,10 @@ import React from 'react';
 
 type Props = {
     text: string;
-    local: string;
     select?: boolean;
 };
 
-export const HeaderLi = ({ text, local, select }: Props) => {
+export const HeaderLi = ({ text, select }: Props) => {
     return (
         <li
             className="relative cursor-pointer uppercase group text-black text-4xl md:text-white md:text-lg"

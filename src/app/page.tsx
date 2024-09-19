@@ -1,101 +1,74 @@
 import Image from "next/image";
+import { AboutSpan } from "./components/AboutSpan";
+import { FirstHomeCarrosel } from "./components/FirstHomeCarrosel";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <section className="w-screen h-screen bg-laranja relative">
+        <video src="https://cdn.pixabay.com/video/2022/07/20/124829-732633113_tiny.mp4"
+          className="w-full h-full object-fill"
+          autoPlay
+          muted
+          loop
+          playsInline></video>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="w-full h-[70px] absolute bottom-0 bg-first-line bg-no-repeat bg-cover md:h-[140px] lg:h-[180px] xl:h-[210px] 2xl:h-[280px]">
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <div className="w-full h-full bg-laranja flex justify-center items-center lg:h-[500px] 2xl:h-[400px]">
+        <div className="w-full h-full flex flex-col md:w-[90%] lg:w-[80%] lg:flex-row">
+          <div className="hidden w-[10%] h-full relative justify-end items-end md:block">
+            <div className="w-[240px] h-full  absolute bottom-0 right-0 bg-four bg-cover"></div>
+          </div>
+          <div className="w-full h-full px-4 md:px-0">
+            <h1 className="text-5xl font-bold text-vermelho font-amsi mb-6 pt-10">Qualidade, Sabor e Tradição desde 2007!</h1>
+
+            <p className="font-gothan text-black text-xl text-justify mb-6">Desde 2007, a Belunno é sinônimo de excelência na produção de
+              embutidos de carne suína. Nosso compromisso com a qualidade e
+              tradição faz de cada produto uma experiência única. Certificados
+              pelo SIF (Selo de Inspeção Federal), nossos produtos são
+              rigorosamente inspecionados para garantir a segurança e a
+              satisfação dos nossos consumidores.</p>
+            
+            <AboutSpan text="Saiba mais" style="bg-vermelho text-white text-[12px] py-1"/>
+          </div>
+
+
+          <div className="w-full h-[300px] flex justify-end items-center lg:w-full lg:h-full">
+            <div className="w-full h-[90%] bg-orange-700 bg-fabric bg-center bg-no-repeat bg-cover md:rounded-3xl
+              lg:w-[90%] lg:h-[90%]"></div>
+          </div>
+        </div>
+      </div>
+
+      <FirstHomeCarrosel/>
+
+      <section>
+            <div className='w-screen h-[330px] bg-orange-50 flex justify-center relative bg-caminhao bg-cover bg-[-300px] bg-no-repeat
+               md:bg-center md:h-[400px] 2xl:h-[500px]'>
+                <div className="w-full h-full bg-black/80 absolute z-0 md:hidden"></div>
+                <div className="w-[90%] h-full flex justify-start items-center relative z-60 md:w-[80%]">
+                    <div className={`w-full h-full flex justify-start items-center flex-col
+                         md:w-[50%] cursor-pointer`}>
+                          <div className="w-full h-[90px] flex justify-start items-end mb-4 md:mb-10 md:h-[150px]">
+                            <h1 className="text-xl font-bold text-vermelho font-amsi mb-6 pr-6 xl:text-3xl 2xl:text-5xl">A marca preferida do Norte</h1> 
+                            <span className="w-[50px] h-[50px] bg-caminhao-icon bg-cover bg-center bg-no-repeat 
+                              md:w-[70px] md:h-[70px] lg:w-[100px] lg:h-[100px] 2xl:w-[150px] 2xl:h-[150px]"></span>
+                          </div>
+
+                            <p className="w-full font-gothan text-white text-base text-justify mb-4 lg:mb-6 xl:text-lg 2xl:text-xl">Belunno combina tradição e qualidade para oferecer os melhores embutidos de carne suína. Com ingredientes selecionados e segurança certificada, nossos produtos garantem sabor único e momentos especiais em sua mesa.</p>
+                          
+                          <div className="w-full glex justify-start">
+                            <AboutSpan text="Saiba mais" style="bg-vermelho text-[12px] 2xl:text-[14px]"/>
+                          </div>
+                            
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </>
   );
 }

@@ -22,10 +22,13 @@ const config: Config = {
       backgroundImage: {
         "belunne": "url('/images/belunno-logo.svg')",
         "first-line": "url('/images/first-line.svg')",
+        "second-line": "url('/images/second-line.svg')",
         "fabric": "url('/images/fabric2.JPG')",
         "four": "url('/images/four-lines.png')",
         "caminhao": "url('/images/caminhao.jpg')",
-        "caminhao-icon": "url('/images/caminhao-icon.png')"
+        "caminhao-icon": "url('/images/caminhao-icon.png')",
+        "home-img": "url('/images/home-img.png')",
+        "food-home": "url('/images/food-home.png')",
       }
     },
   },

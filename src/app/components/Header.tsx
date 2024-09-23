@@ -41,7 +41,7 @@ export default function Header() {
             <MenuMobile onClick={handleMenuOpen} />
 
             <div className={`w-[85vw] ${MenuMobileOpen ? 'h-[400px]' : 'h-0'} bg-white absolute ${local === '/' ? 'top-20' : 'top-16'} 
-                transition-all duration-500 ease-in-out overflow-hidden flex justify-center items-center`}>
+                transition-all duration-500 ease-in-out overflow-hidden flex justify-center items-center z-50`}>
                 <nav>
                     <ul className="flex flex-col justify-center items-center space-y-8 font-semibold uppercase text-3xl">
                     <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer

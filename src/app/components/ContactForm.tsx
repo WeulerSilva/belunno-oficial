@@ -12,18 +12,12 @@ export const ContactForm = () => {
     const [sucessEmail, setSucessEmail] = useState(false);
 
     const [nameError, setNameError] = useState('');
-    const [phoneError, setPhoneError] = useState('');
     const [emailError, setEmailError] = useState('');
     const [messageError, setMessageError] = useState('');
 
     function validateEmail(email: string): boolean {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
-    }
-
-    function validatePhone(phone: string): boolean {
-        const phoneRegex = /^[0-9]+$/;
-        return phoneRegex.test(phone);
     }
 
     function validateName(name: string): boolean {
@@ -88,7 +82,7 @@ export const ContactForm = () => {
                 setName('');
                 setPhone('');
                 setSucessEmail(true);
-            }, (err) => {
+            }, () => {
             });
     }
 

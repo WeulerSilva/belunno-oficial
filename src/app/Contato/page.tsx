@@ -75,8 +75,8 @@ export default function Page() {
                             <span className="text-base text-black font-bold mb-2 md:text-lg xl:text-2xl"
                             >Como armazenar os embutidos corretamente?</span>
                             <span className="text-xl text-vermelho pb-2">
-                                {expandedSections[0] && <GoTriangleUp />}
-                                {!expandedSections[0] && <GoTriangleDown />}</span> {/* Ícone que alterna */}
+                                {expandedSections[1] && <GoTriangleUp />}
+                                {!expandedSections[1] && <GoTriangleDown />}</span> {/* Ícone que alterna */}
                         </div>
                         <div className={`overflow-hidden transition-all duration-500 ${expandedSections[1] ? "h-[180px] md:h-[130px] lg:h-[180px] xl:h-[150px]" : "h-[0px]"} 
                             `}>
@@ -95,8 +95,8 @@ export default function Page() {
                             <span className="text-base text-black font-bold md:text-lg xl:text-2xl"
                             >Qual o prazo de validade dos produtos?</span>
                             <span className="text-xl text-vermelho pb-2">
-                                {expandedSections[0] && <GoTriangleUp />}
-                                {!expandedSections[0] && <GoTriangleDown />}</span> {/* Ícone que alterna */}
+                                {expandedSections[2] && <GoTriangleUp />}
+                                {!expandedSections[2] && <GoTriangleDown />}</span> {/* Ícone que alterna */}
                         </div>
                         <div className={`overflow-hidden transition-all duration-500 ${expandedSections[2] ? 
                             "h-[200px] md:h-[130px] lg:h-[200px] xl:h-[120px]" : "h-[0px]"} 

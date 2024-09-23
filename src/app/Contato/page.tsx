@@ -103,7 +103,7 @@ export default function Page() {
                             `}>
                             <ul className="text-black text-[13px] font-semibold lg:text-lg">
                                 <li>O prazo de validade dos embutidos Belunno pode variar de acordo com o produto e as condições de armazenamento:</li>
-                                <li>- Embutidos congelados (Linguiças Toscana, Apimentada e Churrasco) têm validade de até 6 meses, se mantidos a -12ºC ou mais frio.</li>
+                                <li>- Embutidos congelados {"(Linguiças Toscana, Apimentada e Churrasco)"} têm validade de até 6 meses, se mantidos a -12ºC ou mais frio.</li>
                                 <li>- Produtos resfriados, como o bacon, devem ser consumidos em até 3 meses se armazenados adequadamente. Para mais informações específicas, verifique a embalagem do produto ou consulte nossa equipe.</li>
                             </ul>
                         </div>

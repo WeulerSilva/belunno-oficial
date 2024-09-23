@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ContactForm } from "../components/ContactForm";
 import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
 import Map from "../components/Map";
+import dynamic from "next/dynamic";
 
 export default function Page() {
     const [expandedSections, setExpandedSections] = useState([false, false, false, false]);
@@ -16,6 +17,10 @@ export default function Page() {
             return newState;
         });
     };
+
+    const DynamicMap = dynamic(() => import('../components/Map'), {
+        ssr: false, // Desativa o server-side rendering para esse componente
+    });
 
     return (
         <>
@@ -50,7 +55,7 @@ export default function Page() {
                     <div className="w-full h-full flex justify-start items-start mt-4 flex-col lg:items-center 
                         lg:justify-between lg:flex-row mb-4 xl:mb-0">
                         <h2 className="text-xl font-bold text-vermelho mt-4 md:text-2xl md:min-w-[35%] xl:min-w-[30%] xl:mt-0 xl:mb-8 xl:text-4xl">Dúvidas Frequentes:</h2>
-                        <p className="text-base text-gray-700 mb-4 lg:mb-0 lg:text-lg xl:text-base">Caso esteja com alguma dúvida, verifique se sua pergunta já não foi respondida no campo de  
+                        <p className="text-base text-gray-700 mb-4 lg:mb-0 lg:text-lg xl:text-base">Caso esteja com alguma dúvida, verifique se sua pergunta já não foi respondida no campo de
                             <span className="text-black font-bold"> perguntas frequentes</span> a baixo.</p>
                     </div>
 
@@ -98,7 +103,7 @@ export default function Page() {
                                 {expandedSections[2] && <GoTriangleUp />}
                                 {!expandedSections[2] && <GoTriangleDown />}</span> {/* Ícone que alterna */}
                         </div>
-                        <div className={`overflow-hidden transition-all duration-500 ${expandedSections[2] ? 
+                        <div className={`overflow-hidden transition-all duration-500 ${expandedSections[2] ?
                             "h-[200px] md:h-[130px] lg:h-[200px] xl:h-[120px]" : "h-[0px]"} 
                             `}>
                             <ul className="text-black text-[13px] font-semibold lg:text-lg">
@@ -112,13 +117,13 @@ export default function Page() {
                     <div className="w-full h-full mb-8">
                         <h3 className="text-lg font-bold text-vermelho mt-4 md:text-xl md:mt-8 xl:text-2xl">Não encontrou o que procurava?</h3>
                         <p className="text-base lg:text-lg xl:text-base">Faça sua pergunta no <span className="text-black font-bold">formulário de contato</span> selecionando a opção “Dúvidas frequentes” no campo selecionavel “Assunto”,
-                        que entraremos em contato o mais breve possivel! Obrigado!</p>
+                            que entraremos em contato o mais breve possivel! Obrigado!</p>
                     </div>
                 </div>
             </section>
 
             <div className='w-screen h-full bg-laranja'>
-                <Map/>
+                <DynamicMap />
             </div>
         </>
     );

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { ContactForm } from "../components/ContactForm";
 import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
-import Map from "../components/Map";
 import dynamic from "next/dynamic";
 
 export default function Page() {

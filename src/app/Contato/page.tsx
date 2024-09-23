@@ -49,7 +49,7 @@ export default function Page() {
                 <div className="w-[90%] h-full flex flex-col justify-start items-start lg:mt-4 lg:w-[80%]">
                     <div className="w-full h-full flex justify-start items-start mt-4 flex-col lg:items-center 
                         lg:justify-between lg:flex-row mb-4 xl:mb-0">
-                        <h2 className="text-xl font-bold text-vermelho mt-4 md:text-2xl md:min-w-[35%] xl:min-w-[30%] xl:mt-0 xl:mb-8 xl:text-4xl">Dúvidas Frequentes{'"'}</h2>
+                        <h2 className="text-xl font-bold text-vermelho mt-4 md:text-2xl md:min-w-[35%] xl:min-w-[30%] xl:mt-0 xl:mb-8 xl:text-4xl">Dúvidas Frequentes:</h2>
                         <p className="text-base text-gray-700 mb-4 lg:mb-0 lg:text-lg xl:text-base">Caso esteja com alguma dúvida, verifique se sua pergunta já não foi respondida no campo de  
                             <span className="text-black font-bold"> perguntas frequentes</span> a baixo.</p>
                     </div>

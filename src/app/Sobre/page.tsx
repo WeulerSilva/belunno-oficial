@@ -30,7 +30,7 @@ export default function Page() {
                 </div>
             </section>
 
-            <section className="w-screen h-[1200px] bg-laranja border-t-8 border-white flex items-center justify-center flex-col md:h-[800px]">
+            <section className="w-screen h-[1250px] bg-laranja border-t-8 border-white flex items-center justify-center flex-col md:h-[800px]">
                 <div className="w-[90%] h-[400px] flex items-center justify-between lg:w-[80%] md:h-[500px]">
                     <div className="w-[100%] h-full flex flex-col mt-14 md:w-[40%] xl:w-[50%]">
                         <h2 className="text-lg text-black font-semibold md:mb-2 md:text-lg xl:text-3xl">História da Marca</h2>
@@ -72,19 +72,19 @@ export default function Page() {
                             <AboutLine heigth="h-[170px] bottom-[85%]" width="w-[7%]"
                                 text="Fundação da Belunno, com foco na produção de embutidos de carne suína de alta qualidade."
                                 year="1989" />
-                            <AboutLine heigth="h-[170px] bottom-[74%]" width="w-[85%]"
+                            <AboutLine heigth="h-[170px] bottom-[74%]" width="w-[80%]"
                                 text="Expansão da linha de produtos, introduzindo novos sabores e variedades de embutidos."
                                 year="1995" color="text-black font-semibold" />
-                            <AboutLine heigth="h-[170px] bottom-[62%]" width="w-[117%]"
+                            <AboutLine heigth="h-[170px] bottom-[62%]" width="w-[110%]"
                                 text="Adoção de tecnologias inovadoras para melhorar a produção e garantir padrões de qualidade superiores."
                                 year="2002" />
-                            <AboutLine heigth="h-[170px] bottom-[45%]" width="w-[117%]"
+                            <AboutLine heigth="h-[170px] bottom-[45%]" width="w-[110%]"
                                 text="Certificação pelo Serviço de Inspeção Federal (SIF), reforçando o compromisso com a segurança alimentar."
                                 year="2010" color="text-black font-semibold" />
-                            <AboutLine heigth="h-[170px] bottom-[24%]" width="w-[85%]"
+                            <AboutLine heigth="h-[170px] bottom-[22%]" width="w-[85%]"
                                 text="Belunno se consolida como a marca líder em vendas de embutidos suínos no Norte do Brasil"
                                 year="2020" />
-                            <AboutLine heigth="h-[170px] bottom-[3%]" width="w-[7%]"
+                            <AboutLine heigth="h-[170px] bottom-[0%]" width="w-[7%]"
                                 text="placeholder aleatorio falta conteudo blavbla bla bla bla bla bla bla bla bla bla."
                                 year="2024" color="text-black font-semibold" />
                         </div>

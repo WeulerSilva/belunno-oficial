@@ -7,12 +7,10 @@ import CustomCarousel from "./CustomCarousel";
 
 export const AboutCarrosel = () => {
     const images = [
-        "/images/fabric.JPG",
-        "/images/home-img.png",
-        "/images/fabric.JPG",
-        "/images/home-img.png",
-        "/images/fabric.JPG",
-        "/images/home-img.png",
+        "/images/photo-1.jpg",
+        "/images/photo-2.jpg",
+        "/images/photo-3.jpg",
+        "/images/photo-4.jpg",
         // Adicione mais imagens conforme necessário
     ];
 

@@ -22,8 +22,8 @@ export default function Footer() {
                     <span>+55 (54) 9 9908 3962</span>
                 </div>
 
-                <div className="w-[100%] h-full flex flex-col justify-start lg:w-[10%]">
-                    <div className="w-full flex justify-between items-center text-vermelho">
+                <div className="w-[100%] h-full flex flex-col justify-center items-center lg:w-[10%]">
+                    <div className="w-full flex justify-center items-center text-vermelho">
                         <a href="https://www.instagram.com/ank.ilumer/" target="_blank"
                             className="w-[35px] h-[35px] cursor-pointer rounded-full bg-laranja flex justify-center items-center
                                 lg:w-[30px] lg:h-[30px]">
@@ -40,7 +40,7 @@ export default function Footer() {
                         </a>
                     </div>
 
-                    <AboutSpan text="fale conosco" style="bg-vermelho text-center text-white py-[1px] text-[11px] mt-4" />
+                    <AboutSpan text="fale conosco" style="w-[100px] bg-vermelho text-center text-white py-[1px] text-[11px] mt-4" />
                 </div>
 
                 <div className="w-[100%] h-full flex flex-col justify-start items-center lg:items-end lg:w-[20%]">

@@ -25,10 +25,12 @@ const config: Config = {
         "second-line": "url('/images/second-line.svg')",
         "fabric": "url('/images/fabric2.JPG')",
         "four": "url('/images/four-lines.png')",
+        "four-red": "url('/images/four-red.png')",
         "caminhao": "url('/images/caminhao.jpg')",
         "caminhao-icon": "url('/images/caminhao-icon.png')",
         "home-img": "url('/images/home-img.png')",
         "food-home": "url('/images/food-home.png')",
+        "pig": "url('/images/pig.png')",
       }
     },
   },

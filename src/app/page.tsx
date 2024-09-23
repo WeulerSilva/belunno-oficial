@@ -71,16 +71,16 @@ export default function Home() {
 
       <section className="w-screen h-[800px] bg-laranja relative flex items-start flex-col 2xl:h-[900px]">
         <div className="w-full h-[550px] bg-second-line bg-no-repeat bg-cover absolute bottom-0 z-10 flex items-end justify-center 2xl:h-[650px]">
-          <div className="w-[80%] h-[50%] flex justify-between">
-            <div className="w-[10%] h-full relative">
-              <div className="w-[600px] h-[600px] absolute bottom-0 left-[-70%]
-                bg-food-home bg-contain bg-center bg-no-repeat"></div>
+          <div className="w-[90%] h-[50%] flex justify-between md:w-[80%]">
+            <div className="hidden w-[10%] h-full relative md:flex">
+              <div className="w-[200px] h-[200px] absolute bottom-[400px] left-0
+                bg-food-home bg-contain bg-center bg-no-repeat md:left-[-70%] md:bottom-0 md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[600px]"></div>
             </div>
-            <div className="w-[50%] h-full pl-[10%] mt-4">
+            <div className="w-[100%] h-full mt-4 md:pl-[10%] md:w-[50%]">
               <div className="w-full h-[90px] flex justify-start items-end mb-4 md:h-[100px]">
                 <h1 className="text-xl font-bold text-laranja font-amsi pr-6 xl:text-3xl 2xl:text-5xl">Produtos certificados pelo
                 SIF, garantia de excelência.</h1>
-                <span className="w-[50px] h-[50px]  bg-cover bg-center bg-no-repeat 
+                <span className="w-[50px] h-[50px] bg-cover bg-center bg-no-repeat 
                               md:w-[70px] md:h-[70px] lg:w-[100px] lg:h-[100px] 2xl:w-[100px] 2xl:h-[100px]"></span>
               </div>
               <p className="w-full font-gothan text-white text-base text-justify mb-4 lg:mb-6 xl:text-lg 2xl:text-xl">Cada item da nossa linha é produzido seguindo os mais altos padrões
@@ -91,8 +91,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full h-[80%] bg-green-200 flex">
-          <div className="w-full h-full bg-laranja flex items-end relative md:w-[60%]">
+        <div className="w-full h-[80%] bg-laranja flex flex-col items-center md:flex-row">
+          <div className="w-[90%] h-full bg-laranja flex items-end relative md:w-[60%]">
             <div className="w-[85%] h-full flex">
               <div className={`w-full h-full flex justify-start items-center flex-col
                   md:ml-[23%]`}>
@@ -104,14 +104,14 @@ export default function Home() {
 
                 <p className="w-full font-gothan text-black text-base text-justify mb-4 lg:mb-6 xl:text-lg 2xl:text-xl">Inspire-se com receitas que trazem o sabor autêntico do Norte à sua mesa, usando os embutidos de alta qualidade da Belunno. Transforme cada refeição em um momento especial. (CTA: Veja nossas receitas)</p>
 
-                <div className="w-full glex justify-start">
+                <div className="w-full justify-start">
                   <AboutSpan text="Saiba mais" style="bg-vermelho text-[12px] 2xl:text-[14px]" />
                 </div>
 
               </div>
             </div>
 
-            <div className="w-[25%] h-full bg-gradient-to-r from-[#FFD500] to-transparent absolute right-[-25%]"></div>
+            <div className="hidden w-[25%] h-full bg-gradient-to-r from-[#FFD500] to-transparent absolute right-[-25%] md:block"></div>
           </div>
           <div className="w-full h-full bg-blue-300 bg-home-img bg-cover bg-[center_bottom_100px] bg-no-repeat 2xl:bg-bottom"></div>
         </div>

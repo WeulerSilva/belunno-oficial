@@ -14,9 +14,9 @@ export default function Header() {
     };
 
     return (
-        <header className={`w-screen h-[70px] ${local === '/' ? 'fixed top-0 z-10' : 'bg-laranja border-b-[6px] border-[#BD8A14]'}   
+        <header className={`w-screen h-[70px] ${local === '/' ? 'fixed top-0 z-10' : 'bg-laranja border-b-[6px] border-white'}   
             flex justify-center items-center`}>
-            <div className="w-[80%] h-full flex justify-between items-center relative">
+            <div className="w-[80%] h-full flex justify-between items-center relative md:w-[90%] lg:w-[80%]">
                 <Link href={"/"}>
                     <div className="w-[200px] h-[70px] bg-belunne bg-contain bg-center bg-no-repeat"></div>
                 </Link>
@@ -40,7 +40,8 @@ export default function Header() {
 
             <MenuMobile onClick={handleMenuOpen} />
 
-            <div className={`w-[85vw] ${MenuMobileOpen ? 'h-[400px]' : 'h-0'} bg-white absolute ${local === '/' ? 'top-20' : 'top-16'} transition-all duration-500 ease-in-out overflow-hidden flex justify-center items-center`}>
+            <div className={`w-[85vw] ${MenuMobileOpen ? 'h-[400px]' : 'h-0'} bg-white absolute ${local === '/' ? 'top-20' : 'top-16'} 
+                transition-all duration-500 ease-in-out overflow-hidden flex justify-center items-center`}>
                 <nav>
                     <ul className="flex flex-col justify-center items-center space-y-8 font-semibold uppercase text-3xl">
                     <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer

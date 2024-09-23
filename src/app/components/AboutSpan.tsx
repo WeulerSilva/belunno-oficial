@@ -1,28 +1,22 @@
 "use client";
 
-import { useRouter} from "next/navigation";
+import Link from "next/link";
 
 type Props = {
-    style?: string;
-    text?: string;
-    link?: string;
-}
+  style?: string;
+  text?: string;
+  link?: string;
+};
 
-export const AboutSpan = ({ style, text, link = '/' }: Props) => {
-    const router = useRouter();
+export const AboutSpan = ({ style, text, link = "/" }: Props) => {
 
-    const handleClick = () => {
-        const currentPath = window.location.pathname;
-        const locale = currentPath.split('/')[1];
-        router.push(`/${locale}${link}`);
-    };
-
-    return (
-        <span
-            onClick={handleClick}
-            className={`${style} font-conthrax px-3 h-fit text-[10px] font-semibold rounded-xl uppercase cursor-pointer`}
-        >
-            {text}
-        </span>
-    );
-}
+  return (
+    <Link href={`${link}`}>
+      <span
+        className={`${style} font-conthrax px-3 h-fit text-[10px] font-semibold rounded-xl uppercase cursor-pointer`}
+      >
+        {text}
+      </span>
+    </Link>
+  );
+};

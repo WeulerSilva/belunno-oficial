@@ -18,21 +18,23 @@ export const FirstHomeCarrosel = () => {
 
     return (
         <section>
-            <div className='w-screen h-[500px] flex justify-center md:h-[200px] lg:h-[300px] xl:h-[400px]'>
+            <div className='w-screen h-[350px] bg-laranja flex justify-center md:h-[180px] lg:h-[240px] xl:h-[340px] 2xl:h-[500px]'>
                 <div className="w-full h-full flex justify-center items-center">
                     <div className={`w-full h-full flex justify-end flex-col items-center bg-cover bg-center bg-no-repeat relative
-                         cursor-pointer 2xl:bg-contain
-                         ${changeBanner === 0 ? "bg-vermelho" : ""}
-                          ${changeBanner === 1 ? "bg-red-300" : ""}
-                         ${changeBanner === 2 ? "bg-white" : ""}
-                         ${changeBanner === 3 ? "bg-orange-300" : ""}
-                         ${changeBanner === 4 ? "bg-vermelho" : ""}
-                         ${changeBanner === 5 ? "bg-orange-300" : ""}
-                         ${changeBanner === 6 ? "bg-purple-300" : ""}
-                         ${changeBanner === 7 ? "bg-gray-300" : ""}
+                         cursor-pointer 2xl:bg-cover
+                         ${changeBanner === 0 ? "bg-banner-home-1-m md:bg-banner-home-1" : ""}
+                          ${changeBanner === 1 ? "bg-banner-home-2-m md:bg-banner-home-2" : ""}
+                         ${changeBanner === 2 ? "bg-banner-home-3-m md:bg-banner-home-3" : ""}
+                         ${changeBanner === 3 ? "bg-banner-home-4-m md:bg-banner-home-4" : ""}
+                         ${changeBanner === 4 ? "bg-banner-home-5-m md:bg-banner-home-5" : ""}
+                         ${changeBanner === 5 ? "bg-banner-home-6-m md:bg-banner-home-6" : ""}
+                         ${changeBanner === 6 ? "bg-banner-home-7-m md:bg-banner-home-7" : ""}
+                         ${changeBanner === 7 ? "bg-banner-home-8-m md:bg-banner-home-8" : ""}
+                         ${changeBanner === 8 ? "bg-banner-home-9-m md:bg-banner-home-9" : ""}
+                         ${changeBanner === 9 ? "bg-banner-home-10-m md:bg-banner-home-10" : ""}
                          `}>
 
-                        <div className='w-[300px] h-[30px] pb-4'>
+                        <div className='w-[300px] h-[30px] pb-4 md:h-[10px] lg:h-[30px]'>
                             <div className="w-full h-full flex justify-between items-center">
                                 <div className={`w-[15px] h-[15px] ${changeBanner === 0 ? 'bg-laranja' : 'bg-white'} rounded-full
                                 hover:bg-laranja border-[1px] border-black`}
@@ -60,6 +62,12 @@ export const FirstHomeCarrosel = () => {
                                 <div className={`w-[15px] h-[15px] ${changeBanner === 7 ? 'bg-laranja' : 'bg-white'} rounded-full
                                 hover:bg-laranja border-[1px] border-black`}
                                     onClick={() => setChangeBanner(7)}></div>
+                                    <div className={`w-[15px] h-[15px] ${changeBanner === 8 ? 'bg-laranja' : 'bg-white'} rounded-full
+                                hover:bg-laranja border-[1px] border-black`}
+                                    onClick={() => setChangeBanner(8)}></div>
+                                    <div className={`w-[15px] h-[15px] ${changeBanner === 9 ? 'bg-laranja' : 'bg-white'} rounded-full
+                                hover:bg-laranja border-[1px] border-black`}
+                                    onClick={() => setChangeBanner(9)}></div>
                             </div>
                         </div>
 

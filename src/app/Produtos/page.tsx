@@ -17,7 +17,6 @@ export default function Page() {
         "bg-logo-6",
     ];
 
-    const marca = ['adult-sec', 'lady-sec', 'babyfral', 'limpdent', 'petsec', 'ecovida']
 
     const nextIcons = () => {
         setVisibleIcons((prev) =>

@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <>
       <section className="w-screen h-[95vh] bg-laranja relative md:h-screen">
-        <video src="/images/belunno-video.mp4"
+        <video src="/images/belunno-video2.mp4"
           ref={videoRef}
           className="w-full h-full object-fill"
           autoPlay

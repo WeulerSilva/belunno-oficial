@@ -1,13 +1,53 @@
+"use client"
+
+import { useEffect, useRef } from "react";
 import { AboutSpan } from "./components/AboutSpan";
 import { FirstHomeCarrosel } from "./components/FirstHomeCarrosel";
 
 export default function Home() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!videoRef.current) return;
+
+      const video = videoRef.current;
+      const bounding = video.getBoundingClientRect();
+
+      // Checar se o vídeo está visível na tela
+      const isVisible = bounding.top >= 0 && bounding.bottom <= window.innerHeight;
+
+      if (isVisible) {
+        // Se o vídeo está visível, continuar reprodução
+        if (video.paused) {
+          video.play();
+        }
+      } else {
+        // Se o vídeo não está visível, pausar
+        if (!video.paused) {
+          video.pause();
+        }
+      }
+    };
+
+    // Adicionar listener ao evento de scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Remover o listener quando o componente for desmontado
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
   return (
     <>
       <section className="w-screen h-[95vh] bg-laranja relative md:h-screen">
-        <video src="https://cdn.pixabay.com/video/2022/07/20/124829-732633113_tiny.mp4"
+        <video src="/images/belunno-video.mp4"
+          ref={videoRef}
           className="w-full h-full object-fill"
           autoPlay
+          preload="auto"
           muted
           loop
           playsInline></video>
@@ -79,7 +119,7 @@ export default function Home() {
             <div className="w-[100%] h-full mt-4 md:pl-[10%] md:w-[50%]">
               <div className="w-full h-[90px] flex justify-start items-end mb-4 md:h-[100px]">
                 <h1 className="text-xl font-bold text-laranja font-amsi pr-6 xl:text-3xl 2xl:text-5xl">Produtos certificados pelo
-                SIF, garantia de excelência.</h1>
+                  SIF, garantia de excelência.</h1>
                 <span className="w-[50px] h-[50px] bg-cover bg-center bg-no-repeat 
                               md:w-[70px] md:h-[70px] lg:w-[100px] lg:h-[100px] 2xl:w-[100px] 2xl:h-[100px]"></span>
               </div>

@@ -142,7 +142,7 @@ export default function Home() {
                               md:w-[70px] md:h-[70px] lg:w-[100px] lg:h-[100px] 2xl:w-[100px] 2xl:h-[100px]"></span>
                 </div>
 
-                <p className="w-full font-gothan text-black text-base text-justify mb-4 lg:mb-6 xl:text-lg 2xl:text-xl">Inspire-se com receitas que trazem o sabor autêntico do Norte à sua mesa, usando os embutidos de alta qualidade da Belunno. Transforme cada refeição em um momento especial. (CTA: Veja nossas receitas)</p>
+                <p className="w-full font-gothan text-black text-base text-justify mb-4 lg:mb-6 xl:text-lg 2xl:text-xl">Inspire-se com receitas que trazem o sabor autêntico do Norte à sua mesa, usando os embutidos de alta qualidade da Belunno. Transforme cada refeição em um momento especial.</p>
 
                 <div className="w-full justify-start">
                   <AboutSpan text="Saiba mais" style="bg-vermelho text-[12px] 2xl:text-[14px]" />

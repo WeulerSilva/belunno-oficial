@@ -57,6 +57,10 @@ const config: Config = {
         "logo-4": "url('/images/logo-4.png')",
         "logo-5": "url('/images/logo-5.png')",
         "logo-6": "url('/images/logo-6.png')",
+        "logo-7": "url('/images/logo-7.png')",
+        "logo-8": "url('/images/logo-8.png')",
+        "logo-9": "url('/images/logo-9.png')",
+        "logo-10": "url('/images/logo-10.png')",
       }
     },
   },

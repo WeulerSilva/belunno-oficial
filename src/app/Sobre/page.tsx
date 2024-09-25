@@ -57,15 +57,15 @@ export default function Page() {
                                 year="2002" />
 
                             <AboutLine heigth="bottom-[36%]" width="md:w-[80%] lg:w-[85%] xl:w-[65%]" reverse
-                                text="Certificação pelo Serviço de Inspeção Federal (SIF), reforçando o compromisso com a segurança alimentar."
-                                year="2010" />
+                                text="placeholder aleatorio falta conteudo lorem lorem lorem lorem lorem lorem lorem lorem"
+                                year="2024" />
 
                             <AboutLine heigth="bottom-[30%]" width="md:w-[58%] lg:w-[65%] xl:w-[50%]" reverse
                                 text="Belunno se consolida como a marca líder em vendas de embutidos suínos no Norte do Brasil"
                                 year="2020" />
                             <AboutLine heigth="bottom-[25%]" width="md:w-[35%] lg:w-[45%] xl:w-[35%]" reverse
-                                text="placeholder aleatorio falta conteudo blavbla"
-                                year="2024" />
+                                text="Certificação pelo Serviço de Inspeção Federal (SIF), reforçando o compromisso com a segurança alimentar."
+                                year="2010" />
                         </div>
 
                         <div className="w-full h-full md:h-full md:hidden">

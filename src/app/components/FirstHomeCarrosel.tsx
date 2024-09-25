@@ -21,7 +21,7 @@ export const FirstHomeCarrosel = () => {
             <div className='w-screen h-[350px] bg-laranja flex justify-center md:h-[180px] lg:h-[240px] xl:h-[340px] 2xl:h-[500px]'>
                 <div className="w-full h-full flex justify-center items-center">
                     <div className={`w-full h-full flex justify-end flex-col items-center bg-cover bg-center bg-no-repeat relative
-                         cursor-pointer 2xl:bg-cover
+                         cursor-pointer 2xl:bg-contain
                          ${changeBanner === 0 ? "bg-banner-home-1-m md:bg-banner-home-1" : ""}
                           ${changeBanner === 1 ? "bg-banner-home-2-m md:bg-banner-home-2" : ""}
                          ${changeBanner === 2 ? "bg-banner-home-3-m md:bg-banner-home-3" : ""}

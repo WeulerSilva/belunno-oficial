@@ -147,7 +147,7 @@ export default function Page() {
             {/* Exibição do banner */}
             <Link className="w-full h-full flex justify-center items-center" href={''}>
                 <div
-                    className={`w-full h-[1100px]  bg-cover bg-center bg-no-repeat relative cursor-pointer
+                    className={`w-full h-[1100px] bg-laranja bg-cover bg-center bg-no-repeat relative cursor-pointer
             z-40 md:bg-contain md:bg-top md:h-[445px] lg:h-[630px] xl:h-[833px] xl:bg-cover 2xl:h-[1100px]
             ${changeBanner === 0 ? 'bg-banner-p-1-m md:bg-banner-p-1' : ''}
           ${changeBanner === 1 ? 'bg-banner-p-3-m md:bg-banner-p-3' : ''}

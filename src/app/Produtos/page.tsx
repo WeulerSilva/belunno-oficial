@@ -15,6 +15,10 @@ export default function Page() {
         "bg-logo-2",
         "bg-logo-4",
         "bg-logo-6",
+        "bg-logo-7",
+        "bg-logo-8",
+        "bg-logo-9",
+        "bg-logo-10"
     ];
 
 
@@ -32,76 +36,97 @@ export default function Page() {
 
     return (
         <section className='w-screen h-full flex justify-center items-center flex-col'>
-            <div className='w-[100%] h-full flex justify-start items-start flex-col'>
-                <h1 className='text-bluedark text-[20px] font-bold mb-10 lg:text-[24px] md:mb-0 lg:mb-4 xl:text-[30px] 2xl:text-[2.6rem] 2xl:mb-10'>
-                    oi <span className='text-laranja'>oi</span>
-                </h1>
+            <div className='w-[100%] h-full flex justify-center items-center flex-col bg-laranja'>
+
+                <div className="w-[90%] h-full flex justify-between items-center py-4 flex-col space-y-4 md:space-y-0 md:w-[80%] md:flex-row">
+                    <h1 className= 'w-[100%] text-vermelho text-xl font-bold md:w-[37%] md:text-2xl xl:text-4xl'>
+                        Descubra a linha completa
+                        de embutidos suínos Belunno,
+                        feitos com tradição, qualidade
+                        e sabor inigualáveis.
+                    </h1>
+                    <p className="w-[100%] text-base text-gray text-justify text-gray-700 md:w-[30%] md:text-[14px] xl:text-xl">Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit, sed diam
+                        nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat
+                        volutpat. Ut wisi enim ad minim veniam,
+                        quis nostrud exerci tation ullamcorper</p>
+                    <div className="w-[30%] h-[300px] hidden relative md:block">
+                        <div className="hidden w-[470px] h-[300px]  bg-food-p bg-cover bg-no-repeat bg-center absolute bottom-[-13%]
+                        md:block md:w-[240px] md:h-[160px] lg:w-[300px] lg:h-[170px] xl:w-[420px] xl:h-[280px] 2xl:w-[600px] 2xl:h-[350px]"></div>
+                    </div>
+                </div>
 
                 {/* Carrossel para mobile */}
-                <div className="w-full h-[60px] bg-gradient-to-r from-[#e30a16] to-[#9a140f] flex justify-center items-center relative">
+                <div className="w-full h-[160px] bg-gradient-to-r from-[#e30a16] to-[#9a140f] flex justify-center items-center relative">
+                    <div className="absolute w-full h-2 bg-gradient-to-r from-[#9a140f] to-[#e30a16] top-0"></div>
+                    <div className="absolute w-full h-2 bg-gradient-to-r from-[#9a140f] to-[#e30a16] bottom-0"></div>
                     {/* Botão para voltar */}
-                    <button
-                        className="absolute left-0 p-2 text-laranja font-bold text-2xl bg-white hover:bg-gray-400"
-                        onClick={prevIcons}
-                    >
-                        &lt;
-                    </button>
+                    <div className="w-[80%] h-full flex justify-center items-center relative">
+                        <button
+                            className="absolute left-[-3%] p-2 text-laranja font-bold text-3xl md:left-[-7%] lg:left-[-3%]"
+                            onClick={prevIcons}
+                        >
+                            &lt;
+                        </button>
 
-                    <div className="flex space-x-6 md:hidden">
-                        <div
-                            className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
+                        <div className="flex space-x-6 md:hidden">
+                            <div
+                                className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
               ${logos[visibleIcons]} ${changeBanner === visibleIcons ? '' : 'opacity-40'} hover:opacity-90`}
-                            onClick={() => setChangeBanner(visibleIcons)}
-                        ></div>
-                        <div
-                            className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
+                                onClick={() => setChangeBanner(visibleIcons)}
+                            ></div>
+                            <div
+                                className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
               ${logos[visibleIcons + 1]} ${changeBanner === visibleIcons + 1 ? '' : 'opacity-40'} hover:opacity-90`}
-                            onClick={() => setChangeBanner(visibleIcons + 1)}
-                        ></div>
+                                onClick={() => setChangeBanner(visibleIcons + 1)}
+                            ></div>
+                        </div>
+
+
+                        {/* Exibição de seis ícones por vez */}
+                        <div className="hidden space-x-6 md:flex justify-around items-center w-full">
+                            <div
+                                className={`w-[140px] h-[140px] bg-contain bg-no-repeat bg-center cursor-pointer
+              ${logos[visibleIcons]} ${changeBanner === visibleIcons ? '' : 'opacity-90'} hover:opacity-100`}
+                                onClick={() => setChangeBanner(visibleIcons)}
+                            ></div>
+                            <div
+                                className={`w-[140px] h-[140px] bg-contain bg-no-repeat bg-center cursor-pointer
+              ${logos[visibleIcons + 1]} ${changeBanner === visibleIcons + 1 ? '' : 'opacity-90'} hover:opacity-100`}
+                                onClick={() => setChangeBanner(visibleIcons + 1)}
+                            ></div>
+                            <div
+                                className={`w-[140px] h-[140px] bg-contain bg-no-repeat bg-center cursor-pointer
+              ${logos[visibleIcons + 2]} ${changeBanner === visibleIcons + 2 ? '' : 'opacity-90'} hover:opacity-100`}
+                                onClick={() => setChangeBanner(visibleIcons + 2)}
+                            ></div>
+                            <div
+                                className={`w-[140px] h-[140px] bg-contain bg-no-repeat bg-center cursor-pointer
+              ${logos[visibleIcons + 3]} ${changeBanner === visibleIcons + 3 ? '' : 'opacity-90'} hover:opacity-100`}
+                                onClick={() => setChangeBanner(visibleIcons + 3)}
+                            ></div>
+                            <div
+                                className={`w-[140px] h-[140px] bg-contain bg-no-repeat bg-center cursor-pointer
+              ${logos[visibleIcons + 4]} ${changeBanner === visibleIcons + 4 ? '' : 'opacity-90'} hover:opacity-100`}
+                                onClick={() => setChangeBanner(visibleIcons + 4)}
+                            ></div>
+                            <div
+                                className={`w-[140px] h-[140px] bg-contain bg-no-repeat bg-center cursor-pointer
+              ${logos[visibleIcons + 5]} ${changeBanner === visibleIcons + 5 ? '' : 'opacity-90'} hover:opacity-100`}
+                                onClick={() => setChangeBanner(visibleIcons + 5)}
+                            ></div>
+                        </div>
+
+                        {/* Botão para avançar */}
+                        <button
+                            className="absolute right-[-3%] p-2 text-laranja font-bold text-3xl md:right-[-7%] lg:right-[-3%]"
+                            onClick={nextIcons}
+                        >
+                            &gt;
+                        </button>
                     </div>
 
-
-                    {/* Exibição de seis ícones por vez */}
-                    <div className="hidden space-x-6 md:flex">
-                        <div
-                            className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons]} ${changeBanner === visibleIcons ? '' : 'opacity-40'} hover:opacity-90`}
-                            onClick={() => setChangeBanner(visibleIcons)}
-                        ></div>
-                        <div
-                            className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons + 1]} ${changeBanner === visibleIcons + 1 ? '' : 'opacity-40'} hover:opacity-90`}
-                            onClick={() => setChangeBanner(visibleIcons + 1)}
-                        ></div>
-                        <div
-                            className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons + 2]} ${changeBanner === visibleIcons + 2 ? '' : 'opacity-40'} hover:opacity-90`}
-                            onClick={() => setChangeBanner(visibleIcons + 2)}
-                        ></div>
-                        <div
-                            className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons + 3]} ${changeBanner === visibleIcons + 3 ? '' : 'opacity-40'} hover:opacity-90`}
-                            onClick={() => setChangeBanner(visibleIcons + 3)}
-                        ></div>
-                        <div
-                            className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons + 4]} ${changeBanner === visibleIcons + 4 ? '' : 'opacity-40'} hover:opacity-90`}
-                            onClick={() => setChangeBanner(visibleIcons + 4)}
-                        ></div>
-                        <div
-                            className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons + 5]} ${changeBanner === visibleIcons + 5 ? '' : 'opacity-40'} hover:opacity-90`}
-                            onClick={() => setChangeBanner(visibleIcons + 5)}
-                        ></div>
-                    </div>
-
-                    {/* Botão para avançar */}
-                    <button
-                        className="absolute right-0 p-2 text-laranja font-bold text-2xl bg-white hover:bg-gray-400"
-                        onClick={nextIcons}
-                    >
-                        &gt;
-                    </button>
                 </div>
 
                 {/* Layout tradicional para desktop 
@@ -122,32 +147,18 @@ export default function Page() {
             {/* Exibição do banner */}
             <Link className="w-full h-full flex justify-center items-center" href={''}>
                 <div
-                    className={`w-full h-[430px] mb-4 bg-cover mt-10 bg-center bg-no-repeat relative cursor-pointer md:mt-0 xl:mt-10 md:w-[90%] 
-            z-40 md:bg-cover md:bg-top md:h-[225px] lg:h-[300px] xl:h-[420px] 2xl:h-[560px] xl:bg-contain
-            ${changeBanner === 0 ? 'bg-banner-mobile-2-pt md:bg-banner-2-pt' : ''}
-            ${changeBanner === 0 ? 'bg-banner-mobile-2-en md:bg-banner-2-en' : ''}
-            ${changeBanner === 0 ? 'bg-banner-mobile-2-es md:bg-banner-2-es' : ''}
-
-
-          ${changeBanner === 1 ? 'bg-banner-mobile-3-pt md:bg-banner-3-pt' : ''}
-          ${changeBanner === 1 ? 'bg-banner-mobile-3-en md:bg-banner-3-en' : ''}
-          ${changeBanner === 1 ? 'bg-banner-mobile-3-es md:bg-banner-3-es' : ''}
-
-          ${changeBanner === 2 ? 'bg-banner-mobile-4-pt md:bg-banner-4-pt' : ''}
-          ${changeBanner === 2 ? 'bg-banner-mobile-4-en md:bg-banner-4-en' : ''}
-          ${changeBanner === 2 ? 'bg-banner-mobile-4-es md:bg-banner-4-es' : ''}
-
-          ${changeBanner === 3 ? 'bg-banner-mobile-1-pt md:bg-banner-1-pt' : ''}
-          ${changeBanner === 3 ? 'bg-banner-mobile-1-en md:bg-banner-1-en' : ''}
-          ${changeBanner === 3 ? 'bg-banner-mobile-1-es md:bg-banner-1-es' : ''}
-
-          ${changeBanner === 4 ? 'bg-banner-mobile-5-pt md:bg-banner-5-pt' : ''}
-          ${changeBanner === 4 ? 'bg-banner-mobile-5-en md:bg-banner-5-en' : ''}
-          ${changeBanner === 4 ? 'bg-banner-mobile-5-es md:bg-banner-5-es' : ''}
-
-          ${changeBanner === 5 ? 'bg-banner-mobile-6-pt md:bg-banner-6-pt' : ''}
-          ${changeBanner === 5 ? 'bg-banner-mobile-6-en md:bg-banner-6-en' : ''}
-          ${changeBanner === 5 ? 'bg-banner-mobile-6-es md:bg-banner-6-es' : ''}
+                    className={`w-full h-[1100px]  bg-cover bg-center bg-no-repeat relative cursor-pointer
+            z-40 md:bg-contain md:bg-top md:h-[445px] lg:h-[630px] xl:h-[833px] xl:bg-cover 2xl:h-[1100px]
+            ${changeBanner === 0 ? 'bg-banner-p-1-m md:bg-banner-p-1' : ''}
+          ${changeBanner === 1 ? 'bg-banner-p-3-m md:bg-banner-p-3' : ''}
+          ${changeBanner === 2 ? 'bg-banner-p-5-m md:bg-banner-p-5' : ''}
+          ${changeBanner === 3 ? 'bg-banner-p-2-m md:bg-banner-p-2' : ''}
+          ${changeBanner === 4 ? 'bg-banner-p-4-m md:bg-banner-p-4' : ''}
+          ${changeBanner === 5 ? 'bg-banner-p-6-m md:bg-banner-p-6' : ''}
+          ${changeBanner === 6 ? 'bg-banner-p-7-m md:bg-banner-p-7' : ''}
+          ${changeBanner === 7 ? 'bg-banner-p-8-m md:bg-banner-p-8' : ''}
+          ${changeBanner === 8 ? 'bg-banner-p-9-m md:bg-banner-p-9' : ''}
+          ${changeBanner === 9 ? 'bg-banner-p-10-m md:bg-banner-p-10' : ''}
       `}
                 >
                 </div>

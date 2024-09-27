@@ -26,7 +26,7 @@ export default function Header() {
                 </Link>
 
                 {/* Menu desktop */}
-                <ul className="hidden justify-around items-center w-[60%] h-full text-black font-semibold uppercase md:flex">
+                <ul className={`hidden justify-around items-center w-[60%] ${local === '/' ? 'text-white' : 'text-black'} h-full font-semibold uppercase md:flex`}>
                     <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
                         Home
                     </Link>

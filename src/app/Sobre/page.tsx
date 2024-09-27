@@ -49,7 +49,7 @@ export default function Page() {
                                 year="2007" />
 
                             <AboutLine heigth="bottom-[95%]" width="md:w-[92%] lg:w-[92%] xl:w-[85%]"
-                                text="Expansão no Norte do Brasil, especialmente Maranhão e Pará."
+                                text="Período de adequações e conquistas da certificação do SIF."
                                 year="2008-2010" />
 
                             <AboutLine heigth="bottom-[90%]" width="md:w-[112%] lg:w-[112%] xl:w-[100%]"
@@ -61,10 +61,10 @@ export default function Page() {
                                 year="2024" />
 
                             <AboutLine heigth="bottom-[30%]" width="md:w-[58%] lg:w-[65%] xl:w-[50%]" reverse
-                                text=" Acordos de exportação com a China."
+                                text="Belunno consolidou-se e expandiu o mix para mercados exigentes."
                                 year="2023" />
                             <AboutLine heigth="bottom-[25%]" width="md:w-[35%] lg:w-[45%] xl:w-[35%]" reverse
-                                text="Início da exportação para Angola e África."
+                                text="A fábrica aumentou sua capacidade com nova estrutura industrial."
                                 year="2020" />
                         </div>
 
@@ -73,16 +73,16 @@ export default function Page() {
                                 text="Fundação da BELLUUNÔ Indústria de Alimentos Ltda."
                                 year="2007" />
                             <AboutLine heigth="h-[170px] bottom-[74%]" width="w-[80%]"
-                                text="Expansão no Norte do Brasil, especialmente Maranhão e Pará."
+                                text="Período de adequações e conquistas da certificação do SIF."
                                 year="2008-2010" color="text-black font-semibold" />
                             <AboutLine heigth="h-[170px] bottom-[62%]" width="w-[110%]"
                                 text="Consolidação como referência em carne suína no Norte."
                                 year="2015" />
                             <AboutLine heigth="h-[170px] bottom-[45%]" width="w-[110%]"
-                                text="Início da exportação para Angola e África."
+                                text="A fábrica aumentou sua capacidade com nova estrutura industrial."
                                 year="2020" color="text-black font-semibold" />
                             <AboutLine heigth="h-[170px] bottom-[22%]" width="w-[85%]"
-                                text=" Acordos de exportação com a China."
+                                text="Belunno consolidou-se e expandiu o mix para mercados exigentes."
                                 year="2023" />
                             <AboutLine heigth="h-[170px] bottom-[0%]" width="w-[7%]"
                                  text="Expansão planejada para o Nordeste e Sul do Brasil."

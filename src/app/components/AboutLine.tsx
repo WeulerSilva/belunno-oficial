@@ -17,7 +17,7 @@ export const AboutLine = ({ reverse, width, heigth, text, year, color }: Props) 
             </div>
 
             <div className={`min-w-[150px] w-[130px] h-full flex ${reverse ? "flex-col-reverse lg:pb-14" : "flex-col lg:pt-10"} md:min-w-[110px] lg:min-w-[150px]`}>
-                <p className={`${color ? `${color}  text-[14px]` : 'text-gray-950 text-[14px]'} text-justify`}>{text}</p>
+                <p className={`${color ? `${color}  text-[14px]` : 'text-gray-950 text-[14px]'}`}>{text}</p>
                 <span className="text-2xl text-vermelho font-bold lg:text-2xl">{year}</span>
             </div>
         </div>

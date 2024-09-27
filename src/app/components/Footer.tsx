@@ -12,9 +12,9 @@ export default function Footer() {
             <div className="w-full h-[16px] border-y-4 border-white"></div>
             <div className="w-[90%] h-full flex justify-between items-center text-black flex-col pt-6 lg:w-[90%] lg:pt-[55px] lg:flex-row xl:w-[80%]">
                 <div className="w-[100%] h-full flex flex-col justify-start items-center mb-4 lg:w-[40%] lg:items-start lg:mb-0 xl:w-[35%]">
-                    <span className="text-[14px] font-semibold">BELLUUNÔ INDUSTRÌA DE ALIMENTOS LTDA</span>
-                    <span className="text-[14px] font-semibold text-center">Unidade de Beneficiamento de Carne e Produtos Cárneos</span>
-                    <span className="text-[13px]">Linha Cruzaltinha, 80 - Ciríaco/RS - Brasil</span>
+                    <span className="text-[14px] font-semibold text-center w-full xl:text-left">BELLUUNÔ INDUSTRÌA DE ALIMENTOS LTDA</span>
+                    <span className="text-[14px] font-semibold text-center xl:text-left">Unidade de Beneficiamento de Carne e Produtos Cárneos</span>
+                    <span className="text-[13px] w-full text-center xl:text-left">Linha Cruzaltinha, 80 - Ciríaco/RS - Brasil</span>
                 </div>
 
                 <div className="w-[100%] h-full flex flex-col justify-start items-center text-black font-semibold lg:w-[20%]">
@@ -22,25 +22,26 @@ export default function Footer() {
                     <span>+55 (54) 9 9908 3962</span>
                 </div>
 
-                <div className="w-[100%] h-full flex flex-col justify-center items-center lg:w-[10%]">
-                    <div className="w-full flex justify-center items-center text-vermelho">
-                        <a href="https://www.instagram.com/ank.ilumer/" target="_blank"
+                <div className="w-[100%] h-full flex flex-col justify-center items-center lg:w-[10%] lg:justify-start xl:w-[20%]">
+                    <div className="w-full flex justify-center items-center text-vermelho lg:space-x-2">
+                        <a href="https://www.instagram.com/belunno/" target="_blank"
                             className="w-[35px] h-[35px] cursor-pointer rounded-full bg-laranja flex justify-center items-center
-                                lg:w-[30px] lg:h-[30px]">
+                              lg:w-[20px] lg:h-[20px]  xl:w-[30px] xl:h-[30px]">
                             <FaInstagram className="w-full h-full" />
                         </a>
-                        <a href="https://www.facebook.com/people/ANK-Ilumer/61561552288144/" target="_blank"
-                            className="w-[35px] h-[35px] cursor-pointer rounded-full bg-laranja lg:w-[30px] lg:h-[30px] xl:w-[30px] xl:h-[30px]">
+                        <a href="https://www.facebook.com/belunnoalimentos" target="_blank"
+                            className="w-[35px] h-[35px] cursor-pointer rounded-full bg-laranja lg:w-[20px] lg:h-[20px] xl:w-[30px] xl:h-[30px]">
                             <FaFacebook className="w-full h-full" />
                         </a>
-                        <a href="https://www.youtube.com/@ANK-Ilumer" target="_blank"
+                        <a href="https://www.youtube.com/@belunno" target="_blank"
                             className="w-[35px] h-[35px] cursor-pointer rounded-full bg-laranja flex justify-center items-center
-                                lg:w-[35px] lg:h-[35px]">
+                                lg:w-[25px] lg:h-[25px] xl:w-[35px] xl:h-[35px]">
                             <AiFillYoutube className="w-full h-full" />
                         </a>
                     </div>
 
-                    <AboutSpan text="fale conosco" style="w-[100px] bg-vermelho text-center text-white py-[1px] text-[11px] mt-4" />
+                    <AboutSpan text="fale conosco" style="w-[100px] bg-vermelho text-center text-white py-[1px] text-[11px] mt-4 
+                        lg:text-[8px] xl:text-[11px]" />
                 </div>
 
                 <div className="w-[100%] h-full flex flex-col justify-start items-center lg:items-end lg:w-[20%]">

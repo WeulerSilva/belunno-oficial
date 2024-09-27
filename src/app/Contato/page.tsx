@@ -68,7 +68,7 @@ export default function Page() {
                         </div>
                         <div className={`overflow-hidden transition-all duration-500 ${expandedSections[0] ? "h-[105px] md:h-[80px] lg:h-[100px]" : "h-[0px]"} 
                             `}>
-                            <ul className="text-black text-[13px] font-semibold lg:text-lg">
+                            <ul className="text-black text-[13px] lg:text-lg">
                                 <li>Os produtos Belunno estão disponíveis em diversos pontos de venda do Norte do Brasil.  Você pode encontrá-los em supermercados, açougues e lojas especializadas. Para saber o ponto de venda mais próximo, entre em contato com a nossa equipe.</li>
                             </ul>
                         </div>
@@ -84,7 +84,7 @@ export default function Page() {
                         </div>
                         <div className={`overflow-hidden transition-all duration-500 ${expandedSections[1] ? "h-[180px] md:h-[130px] lg:h-[180px] xl:h-[150px]" : "h-[0px]"} 
                             `}>
-                            <ul className="text-black text-[13px] font-semibold lg:text-lg">
+                            <ul className="text-black text-[13px] lg:text-lg">
                                 <li>Para garantir a qualidade e segurança dos embutidos Belunno, recomendamos seguir as seguintes orientações:</li>
                                 <li>- Mantenha os produtos congelados a -12ºC ou em temperatura inferior até o momento do uso.</li>
                                 <li>- Após aberto, consumir o produto em até 2 dias, mantendo-o refrigerado entre 4ºC e 8ºC.</li>
@@ -103,9 +103,9 @@ export default function Page() {
                                 {!expandedSections[2] && <GoTriangleDown />}</span> {/* Ícone que alterna */}
                         </div>
                         <div className={`overflow-hidden transition-all duration-500 ${expandedSections[2] ?
-                            "h-[200px] md:h-[130px] lg:h-[200px] xl:h-[120px]" : "h-[0px]"} 
+                            "h-[200px] md:h-[130px] lg:h-[200px] xl:h-[140px]" : "h-[0px]"} 
                             `}>
-                            <ul className="text-black text-[13px] font-semibold lg:text-lg">
+                            <ul className="text-black text-[13px] lg:text-lg">
                                 <li>O prazo de validade dos embutidos Belunno pode variar de acordo com o produto e as condições de armazenamento:</li>
                                 <li>- Embutidos congelados (Linguiças Toscana, Apimentada e Churrasco) têm validade de até 6 meses, se mantidos a -12ºC ou mais frio.</li>
                                 <li>- Produtos resfriados, como o bacon, devem ser consumidos em até 3 meses se armazenados adequadamente. Para mais informações específicas, verifique a embalagem do produto ou consulte nossa equipe.</li>

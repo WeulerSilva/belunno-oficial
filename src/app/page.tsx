@@ -62,7 +62,7 @@ export default function Home() {
             <div className="w-[240px] h-full  absolute bottom-0 right-0 bg-four bg-cover"></div>
           </div>
           <div className="w-full h-full px-4 md:px-0">
-            <h1 className="text-5xl font-bold text-vermelho font-amsi mb-6 pt-10">Qualidade, Sabor e Tradição desde 2007!</h1>
+            <h1 className=" font-bold text-vermelho font-amsi mb-6 pt-10 text-3xl 2xl:text-5xl">Qualidade, Sabor e Tradição desde 2007!</h1>
 
             <p className="font-gothan text-black text-xl text-justify mb-6">Desde 2007, a Belunno é sinônimo de excelência na produção de
               embutidos de carne suína. Nosso compromisso com a qualidade e
@@ -123,7 +123,7 @@ export default function Home() {
                 <span className="w-[50px] h-[50px] bg-cover bg-center bg-no-repeat 
                               md:w-[70px] md:h-[70px] lg:w-[100px] lg:h-[100px] 2xl:w-[100px] 2xl:h-[100px]"></span>
               </div>
-              <p className="w-full font-gothan text-white text-base text-justify mb-4 lg:mb-6 xl:text-lg 2xl:text-xl">Cada item da nossa linha é produzido seguindo os mais altos padrões
+              <p className="w-full font-gothan text-white text-base text-justify mb-4 lg:mb-6 xl:text-base 2xl:text-lg">Cada item da nossa linha é produzido seguindo os mais altos padrões
                 de segurança alimentar. Utilizamos tecnologia de ponta para oferecer
                 produtos que atendem às demandas dos consumidores mais
                 exigentes.</p>

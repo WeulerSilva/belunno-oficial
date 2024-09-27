@@ -22,6 +22,9 @@ export default function Header() {
                 </Link>
 
                 <ul className="hidden justify-around items-center w-[60%] h-full text-black font-semibold uppercase md:flex">
+                    <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
+                        ${local === '/' ? 'text-white' : ''}`}>
+                        Home</Link>
                     <Link href={"/Sobre"} className={`${local === '/Sobre' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
                         ${local === '/' ? 'text-white' : ''}`}>
                         Sobre</Link>
@@ -44,7 +47,10 @@ export default function Header() {
                 transition-all duration-500 ease-in-out overflow-hidden flex justify-center items-center z-50`}>
                 <nav>
                     <ul className="flex flex-col justify-center items-center space-y-8 font-semibold uppercase text-3xl">
-                    <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
+                        <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
+                        ${local === '/' ? 'text-white' : ''}`}>
+                            Home</Link>
+                        <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
                         ${local === '/' ? 'text-black' : ''}`}>
                             Inicio</Link>
                         <Link href={"/Sobre"} className={`${local === '/Sobre' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer

@@ -39,18 +39,12 @@ export default function Page() {
             <div className='w-[100%] h-full flex justify-center items-center flex-col bg-laranja'>
 
                 <div className="w-[90%] h-full flex justify-between items-center py-4 flex-col space-y-4 md:space-y-0 md:w-[80%] md:flex-row">
-                    <h1 className= 'w-[100%] text-vermelho text-xl font-bold md:w-[37%] md:text-2xl xl:text-4xl'>
+                    <h1 className= 'w-[100%] text-vermelho text-xl font-bold md:w-[45%] lg:w-[37%] md:text-2xl xl:text-4xl'>
                         Descubra a linha completa
                         de embutidos suínos Belunno,
                         feitos com tradição, qualidade
                         e sabor inigualáveis.
                     </h1>
-                    <p className="w-[100%] text-base text-gray text-justify text-gray-700 md:w-[30%] md:text-[14px] xl:text-xl">Lorem ipsum dolor sit amet,
-                        consectetuer adipiscing elit, sed diam
-                        nonummy nibh euismod tincidunt ut
-                        laoreet dolore magna aliquam erat
-                        volutpat. Ut wisi enim ad minim veniam,
-                        quis nostrud exerci tation ullamcorper</p>
                     <div className="w-[30%] h-[300px] hidden relative md:block">
                         <div className="hidden w-[470px] h-[300px]  bg-food-p bg-cover bg-no-repeat bg-center absolute bottom-[-13%]
                         md:block md:w-[240px] md:h-[160px] lg:w-[300px] lg:h-[170px] xl:w-[420px] xl:h-[280px] 2xl:w-[600px] 2xl:h-[350px]"></div>
@@ -73,12 +67,12 @@ export default function Page() {
                         <div className="flex space-x-6 md:hidden">
                             <div
                                 className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons]} ${changeBanner === visibleIcons ? '' : 'opacity-40'} hover:opacity-90`}
+              ${logos[visibleIcons]} ${changeBanner === visibleIcons ? '' : 'opacity-60'} hover:opacity-90`}
                                 onClick={() => setChangeBanner(visibleIcons)}
                             ></div>
                             <div
                                 className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons + 1]} ${changeBanner === visibleIcons + 1 ? '' : 'opacity-40'} hover:opacity-90`}
+              ${logos[visibleIcons + 1]} ${changeBanner === visibleIcons + 1 ? '' : 'opacity-60'} hover:opacity-90`}
                                 onClick={() => setChangeBanner(visibleIcons + 1)}
                             ></div>
                         </div>
@@ -88,32 +82,32 @@ export default function Page() {
                         <div className="hidden space-x-6 md:flex justify-around items-center w-full">
                             <div
                                 className={`w-[140px] h-[140px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons]} ${changeBanner === visibleIcons ? '' : 'opacity-90'} hover:opacity-100`}
+              ${logos[visibleIcons]} ${changeBanner === visibleIcons ? '' : 'opacity-60'} hover:opacity-100`}
                                 onClick={() => setChangeBanner(visibleIcons)}
                             ></div>
                             <div
                                 className={`w-[140px] h-[140px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons + 1]} ${changeBanner === visibleIcons + 1 ? '' : 'opacity-90'} hover:opacity-100`}
+              ${logos[visibleIcons + 1]} ${changeBanner === visibleIcons + 1 ? '' : 'opacity-60'} hover:opacity-100`}
                                 onClick={() => setChangeBanner(visibleIcons + 1)}
                             ></div>
                             <div
                                 className={`w-[140px] h-[140px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons + 2]} ${changeBanner === visibleIcons + 2 ? '' : 'opacity-90'} hover:opacity-100`}
+              ${logos[visibleIcons + 2]} ${changeBanner === visibleIcons + 2 ? '' : 'opacity-60'} hover:opacity-100`}
                                 onClick={() => setChangeBanner(visibleIcons + 2)}
                             ></div>
                             <div
                                 className={`w-[140px] h-[140px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons + 3]} ${changeBanner === visibleIcons + 3 ? '' : 'opacity-90'} hover:opacity-100`}
+              ${logos[visibleIcons + 3]} ${changeBanner === visibleIcons + 3 ? '' : 'opacity-60'} hover:opacity-100`}
                                 onClick={() => setChangeBanner(visibleIcons + 3)}
                             ></div>
                             <div
                                 className={`w-[140px] h-[140px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons + 4]} ${changeBanner === visibleIcons + 4 ? '' : 'opacity-90'} hover:opacity-100`}
+              ${logos[visibleIcons + 4]} ${changeBanner === visibleIcons + 4 ? '' : 'opacity-60'} hover:opacity-100`}
                                 onClick={() => setChangeBanner(visibleIcons + 4)}
                             ></div>
                             <div
                                 className={`w-[140px] h-[140px] bg-contain bg-no-repeat bg-center cursor-pointer
-              ${logos[visibleIcons + 5]} ${changeBanner === visibleIcons + 5 ? '' : 'opacity-90'} hover:opacity-100`}
+              ${logos[visibleIcons + 5]} ${changeBanner === visibleIcons + 5 ? '' : 'opacity-60'} hover:opacity-100`}
                                 onClick={() => setChangeBanner(visibleIcons + 5)}
                             ></div>
                         </div>
@@ -145,7 +139,7 @@ export default function Page() {
             </div>
 
             {/* Exibição do banner */}
-            <Link className="w-full h-full flex justify-center items-center" href={''}>
+            <Link className="w-full h-full flex justify-center items-center" href={'/Receitas'}>
                 <div
                     className={`w-full h-[1100px] bg-laranja bg-cover bg-center bg-no-repeat relative cursor-pointer
             z-40 md:bg-contain md:bg-top md:h-[445px] lg:h-[630px] xl:h-[833px] xl:bg-cover 2xl:h-[1100px]

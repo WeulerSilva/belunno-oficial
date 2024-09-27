@@ -77,7 +77,7 @@ export default function Page() {
                                 year="2008-2010" color="text-black font-semibold" />
                             <AboutLine heigth="h-[170px] bottom-[62%]" width="w-[110%]"
                                 text="Consolidação como referência em carne suína no Norte."
-                                year="2015" />
+                                year="2015" pt="pt-12"/>
                             <AboutLine heigth="h-[170px] bottom-[45%]" width="w-[110%]"
                                 text="A fábrica aumentou sua capacidade com nova estrutura industrial."
                                 year="2020" color="text-black font-semibold" />

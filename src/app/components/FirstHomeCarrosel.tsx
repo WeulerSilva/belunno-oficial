@@ -18,7 +18,7 @@ export const FirstHomeCarrosel = () => {
 
     return (
         <section>
-            <div className='w-screen h-[350px] bg-laranja flex justify-center md:h-[180px] lg:h-[240px] xl:h-[340px] 2xl:h-[500px]'>
+            <div className='w-screen h-[350px] bg-laranja flex justify-center md:h-[180px] lg:h-[240px] xl:h-[340px] 2xl:h-[500px] 2xl:bg-gradient-to-r from-[#9a140f] to-[#e30a16]'>
                 <div className="w-full h-full flex justify-center items-center">
                     <div className={`w-full h-full flex justify-end flex-col items-center bg-cover bg-center bg-no-repeat relative
                          cursor-pointer 2xl:bg-contain

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -13,17 +13,21 @@ export default function Header() {
         setMenuMobileOpen(!MenuMobileOpen);
     };
 
+    const handleMenuClose = () => {
+        setMenuMobileOpen(false);
+    };
+
     return (
         <header className={`w-screen h-[70px] ${local === '/' ? 'fixed top-0 z-10' : 'bg-laranja border-b-[6px] border-white'}   
             flex justify-center items-center`}>
             <div className="w-[80%] h-full flex justify-between items-center relative md:w-[90%] lg:w-[80%]">
-                <Link href={"/"}>
+                <Link href={"/"} onClick={handleMenuClose}>
                     <div className="w-[200px] h-[70px] bg-belunne bg-contain bg-center bg-no-repeat"></div>
                 </Link>
 
                 <ul className="hidden justify-around items-center w-[60%] h-full text-black font-semibold uppercase md:flex">
                     <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-white' : ''}`}>
+                        ${local === '/' ? 'text-vermelho' : ''}`}>
                         Home</Link>
                     <Link href={"/Sobre"} className={`${local === '/Sobre' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
                         ${local === '/' ? 'text-white' : ''}`}>
@@ -48,27 +52,23 @@ export default function Header() {
                 <nav>
                     <ul className="flex flex-col justify-center items-center space-y-8 font-semibold uppercase text-3xl">
                         <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-white' : ''}`}>
+                        ${local === '/' ? 'text-black' : ''}`} onClick={handleMenuClose}>
                             Home</Link>
-                        <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-black' : ''}`}>
-                            Inicio</Link>
                         <Link href={"/Sobre"} className={`${local === '/Sobre' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-black' : ''}`}>
+                        ${local === '/' ? 'text-black' : ''}`} onClick={handleMenuClose}>
                             Sobre</Link>
                         <Link href={"/Produtos"} className={`${local === '/Produtos' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-black' : ''}`}>
+                        ${local === '/' ? 'text-black' : ''}`} onClick={handleMenuClose}>
                             Produtos</Link>
                         <Link href={"/Receitas"} className={`${local === '/Receitas' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-black' : ''}`}>
+                        ${local === '/' ? 'text-black' : ''}`} onClick={handleMenuClose}>
                             Receitas</Link>
                         <Link href={"/Contato"} className={`${local === '/Contato' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-black' : ''}`}>
+                        ${local === '/' ? 'text-black' : ''}`} onClick={handleMenuClose}>
                             Contato</Link>
                     </ul>
                 </nav>
             </div>
-
         </header>
     );
 }

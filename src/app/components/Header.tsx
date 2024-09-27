@@ -14,7 +14,7 @@ export default function Header() {
     };
 
     const handleMenuClose = () => {
-        setMenuMobileOpen(false);
+        setMenuMobileOpen(false); // Fecha o menu ao clicar no link
     };
 
     return (
@@ -25,49 +25,50 @@ export default function Header() {
                     <div className="w-[200px] h-[70px] bg-belunne bg-contain bg-center bg-no-repeat"></div>
                 </Link>
 
+                {/* Menu desktop */}
                 <ul className="hidden justify-around items-center w-[60%] h-full text-black font-semibold uppercase md:flex">
-                    <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-vermelho' : ''}`}>
-                        Home</Link>
-                    <Link href={"/Sobre"} className={`${local === '/Sobre' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-white' : ''}`}>
-                        Sobre</Link>
-                    <Link href={"/Produtos"} className={`${local === '/Produtos' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-white' : ''}`}>
-                        Produtos</Link>
-                    <Link href={"/Receitas"} className={`${local === '/Receitas' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-white' : ''}`}>
-                        Receitas</Link>
-                    <Link href={"/Contato"} className={`${local === '/Contato' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-white' : ''}`}>
-                        Contato</Link>
+                    <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                        Home
+                    </Link>
+                    <Link href={"/Sobre"} className={`${local === '/Sobre' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                        Sobre
+                    </Link>
+                    <Link href={"/Produtos"} className={`${local === '/Produtos' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                        Produtos
+                    </Link>
+                    <Link href={"/Receitas"} className={`${local === '/Receitas' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                        Receitas
+                    </Link>
+                    <Link href={"/Contato"} className={`${local === '/Contato' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                        Contato
+                    </Link>
                 </ul>
-                <div className="w-1 h-1"></div>
-            </div>
 
-            <MenuMobile onClick={handleMenuOpen} />
+                {/* Menu Mobile */}
+                <MenuMobile isMenuOpen={MenuMobileOpen} onClick={handleMenuOpen} />
 
-            <div className={`w-[85vw] ${MenuMobileOpen ? 'h-[400px]' : 'h-0'} bg-white absolute ${local === '/' ? 'top-20' : 'top-16'} 
-                transition-all duration-500 ease-in-out overflow-hidden flex justify-center items-center z-50`}>
-                <nav>
-                    <ul className="flex flex-col justify-center items-center space-y-8 font-semibold uppercase text-3xl">
-                        <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-black' : ''}`} onClick={handleMenuClose}>
-                            Home</Link>
-                        <Link href={"/Sobre"} className={`${local === '/Sobre' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-black' : ''}`} onClick={handleMenuClose}>
-                            Sobre</Link>
-                        <Link href={"/Produtos"} className={`${local === '/Produtos' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-black' : ''}`} onClick={handleMenuClose}>
-                            Produtos</Link>
-                        <Link href={"/Receitas"} className={`${local === '/Receitas' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-black' : ''}`} onClick={handleMenuClose}>
-                            Receitas</Link>
-                        <Link href={"/Contato"} className={`${local === '/Contato' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer
-                        ${local === '/' ? 'text-black' : ''}`} onClick={handleMenuClose}>
-                            Contato</Link>
-                    </ul>
-                </nav>
+                <div className={`w-[85vw] ${MenuMobileOpen ? 'h-[400px]' : 'h-0'} bg-white absolute ${local === '/' ? 'top-20' : 'top-16'} 
+                    transition-all duration-500 ease-in-out overflow-hidden flex justify-center items-center z-50`}>
+                    <nav>
+                        <ul className="flex flex-col justify-center items-center space-y-8 font-semibold uppercase text-3xl">
+                            <Link href={"/"} onClick={handleMenuClose} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                                Home
+                            </Link>
+                            <Link href={"/Sobre"} onClick={handleMenuClose} className={`${local === '/Sobre' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                                Sobre
+                            </Link>
+                            <Link href={"/Produtos"} onClick={handleMenuClose} className={`${local === '/Produtos' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                                Produtos
+                            </Link>
+                            <Link href={"/Receitas"} onClick={handleMenuClose} className={`${local === '/Receitas' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                                Receitas
+                            </Link>
+                            <Link href={"/Contato"} onClick={handleMenuClose} className={`${local === '/Contato' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                                Contato
+                            </Link>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
     );

@@ -45,7 +45,7 @@ export default function Page() {
                     <div className="w-[85%] h-full relative flex flex-col lg:w-[81%] xl:w-[90%]">
                         <div className="hidden w-full h-full md:block">
                             <AboutLine heigth="bottom-[100%]" width="md:w-[72%] lg:w-[72%] xl:w-[70%]"
-                                text="Fundação da BELLUUNÔ Indústria de Alimentos Ltda."
+                                text="Fundação da Belluunô Indústria de Alimentos Ltda."
                                 year="2007" />
 
                             <AboutLine heigth="bottom-[95%]" width="md:w-[92%] lg:w-[92%] xl:w-[85%]"
@@ -70,7 +70,7 @@ export default function Page() {
 
                         <div className="w-full h-full md:h-full md:hidden">
                             <AboutLine heigth="h-[170px] bottom-[85%]" width="w-[7%]"
-                                text="Fundação da BELLUUNÔ Indústria de Alimentos Ltda."
+                                text="Fundação da Belluunô Indústria de Alimentos Ltda."
                                 year="2007" />
                             <AboutLine heigth="h-[170px] bottom-[74%]" width="w-[80%]"
                                 text="Período de adequações e conquistas da certificação do SIF."

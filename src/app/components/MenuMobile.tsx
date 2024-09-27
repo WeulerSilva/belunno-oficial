@@ -4,20 +4,14 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 type Props = {
+    isMenuOpen: boolean;
     onClick: () => void;
 }
 
-export const MenuMobile = ({ onClick }: Props) => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const handleClick = () => {
-        onClick();
-
-        setIsMenuOpen(prevState => !prevState);
-    };
+export const MenuMobile = ({ isMenuOpen, onClick }: Props) => {
 
     return (
-        <div className="flex w-10 h-10 md:hidden" onClick={handleClick}>
+        <div className="flex w-10 h-10 md:hidden" onClick={onClick}>
             <div className={`transition-transform duration-300 ${isMenuOpen ? 'rotate-45 opacity-0' : 'rotate-0 opacity-100'}`}>
                 <AiOutlineMenu className="w-[46px] h-[46px] cursor-pointer text-white" />
             </div>

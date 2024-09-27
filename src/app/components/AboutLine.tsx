@@ -16,7 +16,7 @@ export const AboutLine = ({ reverse, width, heigth, text, year, color }: Props) 
                     ${reverse ? "border-t-[15px] rounded-tr-full" : 'border-b-[15px] rounded-ee-full'} md:h-[100px] md:min-w-[100px]`}></div>
             </div>
 
-            <div className={`min-w-[150px] w-[130px] h-full flex ${reverse ? "flex-col-reverse lg:pb-14" : "flex-col lg:pt-10"} md:min-w-[110px] lg:min-w-[150px]`}>
+            <div className={`min-w-[150px] w-[130px] h-full flex ${reverse ? "flex-col-reverse lg:pb-14" : "flex-col pt-8 lg:pt-10"} md:min-w-[110px] lg:min-w-[150px]`}>
                 <p className={`${color ? `${color}  text-[14px]` : 'text-gray-950 text-[14px]'}`}>{text}</p>
                 <span className="text-2xl text-vermelho font-bold lg:text-2xl">{year}</span>
             </div>

@@ -31,7 +31,7 @@ export default function Page() {
             </section>
 
             <section className="w-screen h-[1250px] bg-laranja border-t-8 border-white flex items-center justify-center flex-col md:h-[800px]">
-                <div className="w-[90%] h-[400px] flex items-center justify-between lg:w-[80%] md:h-[500px]">
+                <div className="w-[90%] h-[150px] flex items-center justify-between md:h-[500px] lg:w-[80%]">
                     <div className="w-[100%] h-full flex flex-col mt-14 md:w-[40%] xl:w-[50%]">
                         <h2 className="text-lg text-black font-semibold md:mb-2 md:text-lg xl:text-3xl">História da Marca</h2>
                         <h1 className="text-xl text-vermelho font-bold mb-1 md:text-xl xl:text-3xl 2xl:text-4xl">Uma Jornada de Sabor e Tradição</h1>
@@ -128,7 +128,7 @@ export default function Page() {
                         Quer saber mais sobre o que nos torna especiais?</h2>
                     <p className="text-gray-700 text-base md:text-lg lg:text-[14px] xl:text-lg 2xl:text-xl">
                         Entre em contato conosco e descubra o que faz <br/>da Belunno a marca preferida no Norte do Brasil.</p>
-                    <AboutSpan text="Contato" style="bg-vermelho text-base text-white"/>
+                    <AboutSpan link="/Contato" text="Contato" style="bg-vermelho text-base text-white"/>
                 </div>
             </div>
         </>

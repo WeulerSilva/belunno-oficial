@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 
@@ -20,7 +21,11 @@ export const FirstHomeCarrosel = () => {
         <section>
             <div className='w-screen h-[350px] bg-laranja flex justify-center md:h-[180px] lg:h-[240px] xl:h-[340px] 2xl:h-[500px] 2xl:bg-gradient-to-r from-[#9a140f] to-[#e30a16]'>
                 <div className="w-full h-full flex justify-center items-center">
-                    <div className={`w-full h-full flex justify-end flex-col items-center bg-cover bg-center bg-no-repeat relative
+
+                    <div className={`w-full h-full flex justify-end flex-col items-center relative
+                         `}>
+                        <Link href={'/Produtos'} className="w-full h-full">
+                            <div className={`w-full h-full bg-cover bg-center bg-no-repeat
                          cursor-pointer 2xl:bg-contain
                          ${changeBanner === 0 ? "bg-banner-home-1-m md:bg-banner-home-1" : ""}
                           ${changeBanner === 1 ? "bg-banner-home-2-m md:bg-banner-home-2" : ""}
@@ -31,11 +36,12 @@ export const FirstHomeCarrosel = () => {
                          ${changeBanner === 6 ? "bg-banner-home-7-m md:bg-banner-home-7" : ""}
                          ${changeBanner === 7 ? "bg-banner-home-8-m md:bg-banner-home-8" : ""}
                          ${changeBanner === 8 ? "bg-banner-home-9-m md:bg-banner-home-9" : ""}
-                         ${changeBanner === 9 ? "bg-banner-home-10-m md:bg-banner-home-10" : ""}
-                         `}>
+                         ${changeBanner === 9 ? "bg-banner-home-10-m md:bg-banner-home-10" : ""}`}>
+                            </div>
+                        </Link>
 
-                        <div className='w-[300px] h-[30px] pb-4 md:h-[10px] lg:h-[10px]'>
-                            <div className="w-full h-full flex justify-between items-center">
+                        <div className='w-[300px] h-[30px] pb-4 md:h-[10px] lg:h-[10px] absolute'>
+                            <div className="w-full h-full flex justify-between items-center cursor-pointer">
                                 <div className={`w-[10px] h-[10px] ${changeBanner === 0 ? 'bg-laranja' : 'bg-white'} rounded-full
                                 hover:bg-laranja border-[1px] border-black`}
                                     onClick={() => setChangeBanner(0)}></div>
@@ -62,16 +68,17 @@ export const FirstHomeCarrosel = () => {
                                 <div className={`w-[10px] h-[10px] ${changeBanner === 7 ? 'bg-laranja' : 'bg-white'} rounded-full
                                 hover:bg-laranja border-[1px] border-black`}
                                     onClick={() => setChangeBanner(7)}></div>
-                                    <div className={`w-[10px] h-[10px] ${changeBanner === 8 ? 'bg-laranja' : 'bg-white'} rounded-full
+                                <div className={`w-[10px] h-[10px] ${changeBanner === 8 ? 'bg-laranja' : 'bg-white'} rounded-full
                                 hover:bg-laranja border-[1px] border-black`}
                                     onClick={() => setChangeBanner(8)}></div>
-                                    <div className={`w-[10px] h-[10px] ${changeBanner === 9 ? 'bg-laranja' : 'bg-white'} rounded-full
+                                <div className={`w-[10px] h-[10px] ${changeBanner === 9 ? 'bg-laranja' : 'bg-white'} rounded-full
                                 hover:bg-laranja border-[1px] border-black`}
                                     onClick={() => setChangeBanner(9)}></div>
                             </div>
                         </div>
 
                     </div>
+
                 </div>
             </div>
 

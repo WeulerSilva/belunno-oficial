@@ -42,6 +42,7 @@ export default function Home() {
 
   return (
     <>
+    {/* Desenvolvido por Weuler Silva */}
       <section className="w-screen h-[45vh] bg-laranja relative md:h-screen">
         <video src="/images/belunno-video2.mp4"
           ref={videoRef}
@@ -71,7 +72,7 @@ export default function Home() {
               rigorosamente inspecionados para garantir a segurança e a
               satisfação dos nossos consumidores.</p>
 
-            <AboutSpan text="Saiba mais" style="bg-vermelho text-white text-[12px] py-1" />
+            <AboutSpan link="/Sobre" text="Saiba mais" style="bg-vermelho text-white text-[12px] py-1" />
           </div>
 
 
@@ -134,7 +135,7 @@ export default function Home() {
         <div className="w-full h-[80%] bg-laranja flex flex-col items-center md:flex-row">
           <div className="w-[90%] h-full bg-laranja flex items-end relative md:w-[60%]">
             <div className="w-[85%] h-full flex">
-              <div className={`w-full h-full flex justify-start items-center flex-col
+              <div className={`w-full h-full flex justify-start items-center flex-col relative
                   md:ml-[23%]`}>
                 <div className="w-full h-[90px] flex justify-start items-end mb-4 md:h-[100px]">
                   <h1 className="text-xl font-bold text-vermelho font-amsi mb-6 pr-6 xl:text-3xl 2xl:text-5xl">RECEITAS</h1>
@@ -144,8 +145,8 @@ export default function Home() {
 
                 <p className="w-full font-gothan text-black text-base text-justify mb-4 lg:mb-6 xl:text-lg 2xl:text-xl">Inspire-se com receitas que trazem o sabor autêntico do Norte à sua mesa, usando os embutidos de alta qualidade da Belunno. Transforme cada refeição em um momento especial.</p>
 
-                <div className="w-full justify-start">
-                  <AboutSpan text="Saiba mais" style="bg-vermelho text-white text-[12px] 2xl:text-[14px]" />
+                <div className="w-full justify-start absolute top-[250px] z-10 md:top-[320px] lg:top-[300px]">
+                  <AboutSpan link="/Receitas" text="Saiba mais" style="bg-vermelho text-white text-[12px] 2xl:text-[14px]" />
                 </div>
 
               </div>

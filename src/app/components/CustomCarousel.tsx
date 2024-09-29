@@ -34,6 +34,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ images }) => {
           onClick={prevSlide}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 text-laranja px-4 py-2 z-10
             font-bold text-4xl"
+            title='Anterior'
         >
           {"<"}
         </button>
@@ -72,6 +73,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ images }) => {
           onClick={nextSlide}
           className="absolute right-0 top-1/2 transform -translate-y-1/2 text-laranja px-4 py-2 z-10
             font-bold text-4xl"
+          title='Proximo'
         >
           {">"}
         </button>

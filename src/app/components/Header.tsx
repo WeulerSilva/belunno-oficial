@@ -21,25 +21,25 @@ export default function Header() {
         <header className={`w-screen h-[70px] ${local === '/' ? 'fixed top-0 z-10' : 'bg-laranja border-b-[6px] border-white'}   
             flex justify-center items-center`}>
             <div className="w-[80%] h-full flex justify-between items-center relative md:w-[90%] lg:w-[80%]">
-                <Link href={"/"} onClick={handleMenuClose}>
+                <Link href={"/"} onClick={handleMenuClose} title="HOME">
                     <div className="w-[200px] h-[70px] bg-belunne bg-contain bg-center bg-no-repeat"></div>
                 </Link>
 
                 {/* Menu desktop */}
                 <ul className={`hidden justify-around items-center w-[60%] ${local === '/' ? 'text-white' : 'text-black'} h-full font-semibold uppercase md:flex`}>
-                    <Link href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                    <Link title="Home" href={"/"} className={`${local === '/' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
                         Home
                     </Link>
-                    <Link href={"/Sobre"} className={`${local === '/Sobre' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                    <Link title="SOBRE" href={"/Sobre"} className={`${local === '/Sobre' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
                         Sobre
                     </Link>
-                    <Link href={"/Produtos"} className={`${local === '/Produtos' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                    <Link title="PRODUTOS" href={"/Produtos"} className={`${local === '/Produtos' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
                         Produtos
                     </Link>
-                    <Link href={"/Receitas"} className={`${local === '/Receitas' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                    <Link title="RECEITAS" href={"/Receitas"} className={`${local === '/Receitas' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
                         Receitas
                     </Link>
-                    <Link href={"/Contato"} className={`${local === '/Contato' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
+                    <Link title="CONTATO" href={"/Contato"} className={`${local === '/Contato' ? 'text-vermelho' : ''} hover:text-vermelho cursor-pointer`}>
                         Contato
                     </Link>
                 </ul>

@@ -18,7 +18,7 @@ export default function Footer() {
                 </div>
 
                 <div className="w-[100%] h-full flex flex-col justify-start items-center text-black font-semibold lg:w-[20%]">
-                    <span>qualidade@belunno.com.br</span>
+                    <a href="mailto:qualidade@belunno.com.br" title="Email">qualidade@belunno.com.br</a>
                     <span>+55 (54) 9 9908 3962</span>
                 </div>
 
@@ -40,7 +40,7 @@ export default function Footer() {
                         </a>
                     </div>
 
-                    <AboutSpan text="fale conosco" style="w-[100px] bg-vermelho text-center text-white py-[1px] text-[11px] mt-4 
+                    <AboutSpan link="/Contato" text="fale conosco" style="w-[100px] bg-vermelho text-center text-white py-[1px] text-[11px] mt-4 
                         lg:text-[8px] xl:text-[11px]" />
                 </div>
 

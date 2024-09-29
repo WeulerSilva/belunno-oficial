@@ -82,6 +82,8 @@ const config: Config = {
         "banner-p-8-m": "url('/images/banner-p-8-m.png')",
         "banner-p-9-m": "url('/images/banner-p-9-m.png')",
         "banner-p-10-m": "url('/images/banner-p-10-m.png')",
+        "pizza-hand": "url('/images/pizza-hand.jpg')",
+        "recipies": "url('/images/recipes.png')",
       }
     },
   },

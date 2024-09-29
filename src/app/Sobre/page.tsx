@@ -105,7 +105,7 @@ export default function Page() {
                     </div>
 
                     <div className="flex flex-col md:w-[80%] lg:w-[30%]">
-                        <h2 className="text-vermelho text-xl font-bold md:text-2xl xl:text-4xl">Vissão:</h2>
+                        <h2 className="text-vermelho text-xl font-bold md:text-2xl xl:text-4xl">Visão:</h2>
                         <p className="text-base text-justify lg:text-left md:text-[14px] xl:text-xl">O objetivo da Belunno é expandir sua presença para todo o território nacional, levando seus produtos de alta qualidade e tradição a novos mercados, consolidando-se como referência em carnes suínas no Brasil.</p>
                     </div>
 
@@ -128,7 +128,7 @@ export default function Page() {
                         Quer saber mais sobre o que nos torna especiais?</h2>
                     <p className="text-gray-700 text-base md:text-lg lg:text-[14px] xl:text-lg 2xl:text-xl">
                         Entre em contato conosco e descubra o que faz <br/>da Belunno a marca preferida no Norte do Brasil.</p>
-                    <AboutSpan link="/Contato" text="Contato" style="bg-vermelho text-base text-white"/>
+                    <AboutSpan link="/Contato" text="Contato" style="bg-vermelho text-base text-white hover:bg-laranja hover:text-black"/>
                 </div>
             </div>
         </>

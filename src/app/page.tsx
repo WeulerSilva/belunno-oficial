@@ -100,8 +100,8 @@ export default function Home() {
 
               <p className="w-full font-gothan text-white text-base text-justify mb-4 lg:mb-6 xl:text-lg 2xl:text-xl">Belunno combina tradição e qualidade para oferecer os melhores embutidos de carne suína. Com ingredientes selecionados e segurança certificada, nossos produtos garantem sabor único e momentos especiais em sua mesa.</p>
 
-              <div className="w-full glex justify-start">
-                <AboutSpan text="Saiba mais" style="bg-vermelho text-white text-[12px] 2xl:text-[14px]" />
+              <div className="w-full glex justify-start" title="Sobre">
+                <AboutSpan link="/Sobre" text="Saiba mais" style="bg-vermelho text-white text-[12px] hover:bg-laranja hover:text-black 2xl:text-[14px]" />
               </div>
 
             </div>
@@ -145,7 +145,7 @@ export default function Home() {
 
                 <p className="w-full font-gothan text-black text-base text-justify mb-4 lg:mb-6 xl:text-lg 2xl:text-xl">Inspire-se com receitas que trazem o sabor autêntico do Norte à sua mesa, usando os embutidos de alta qualidade da Belunno. Transforme cada refeição em um momento especial.</p>
 
-                <div className="w-full justify-start absolute top-[250px] z-10 md:top-[320px] lg:top-[300px]">
+                <div className="w-full justify-start absolute top-[250px] z-10 md:top-[320px] lg:top-[300px]" title="Receitas">
                   <AboutSpan link="/Receitas" text="Saiba mais" style="bg-vermelho text-white text-[12px] 2xl:text-[14px]" />
                 </div>
 

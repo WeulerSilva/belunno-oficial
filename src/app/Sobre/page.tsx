@@ -126,7 +126,7 @@ export default function Page() {
                 lg:w-[80%] lg:h-[100px] lg:flex-row">
                     <h2 className="text-vermelho text-xl font-bold text-center md:text-2xl lg:text-[16px] xl:text-xl 2xl:text-3xl">
                         Quer saber mais sobre o que nos torna especiais?</h2>
-                    <p className="text-gray-700 text-base md:text-lg lg:text-[14px] xl:text-lg 2xl:text-xl">
+                    <p className="text-gray-700 text-base md:text-lg lg:text-[14px] xl:text-lg 2xl:text-lg">
                         Entre em contato conosco e descubra o que faz <br/>da Belunno a marca preferida no Norte do Brasil.</p>
                     <AboutSpan link="/Contato" text="Contato" style="bg-vermelho text-base text-white hover:bg-laranja hover:text-black"/>
                 </div>

@@ -72,7 +72,7 @@ export default function Home() {
               rigorosamente inspecionados para garantir a segurança e a
               satisfação dos nossos consumidores.</p>
 
-            <AboutSpan link="/Sobre" text="Saiba mais" style="bg-vermelho text-white text-[12px] py-1" />
+            <AboutSpan link="/Sobre" text="Saiba mais" style="bg-vermelho text-white text-[12px] py-1"/>
           </div>
 
 
@@ -98,7 +98,7 @@ export default function Home() {
                               md:w-[70px] md:h-[70px] lg:w-[100px] lg:h-[100px] 2xl:w-[100px] 2xl:h-[100px]"></span>
               </div>
 
-              <p className="w-full font-gothan text-white text-base text-justify mb-4 lg:mb-6 xl:text-lg 2xl:text-xl">Belunno combina tradição e qualidade para oferecer os melhores embutidos de carne suína. Com ingredientes selecionados e segurança certificada, nossos produtos garantem sabor único e momentos especiais em sua mesa.</p>
+              <p className="w-full font-gothan text-white text-base text-justify mb-4 lg:mb-6 xl:text-lg 2xl:text-xl">A Belunno combina tradição e qualidade para oferecer os melhores embutidos de carne suína. Com ingredientes selecionados e segurança certificada, nossos produtos garantem sabor único e momentos especiais em sua mesa.</p>
 
               <div className="w-full glex justify-start" title="Sobre">
                 <AboutSpan link="/Sobre" text="Saiba mais" style="bg-vermelho text-white text-[12px] hover:bg-laranja hover:text-black 2xl:text-[14px]" />

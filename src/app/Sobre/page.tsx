@@ -20,10 +20,9 @@ export default function Page() {
                         <div className="w-[160px] h-[90%] bg-four bg-cover bg-no-repeat bg-center absolute bottom-0"></div>
                     </div>
                     <div className="w-[100%] h-[300px] flex justify-end items-center relative z-10 md:h-full md:w-[40%]">
-                        <video src="https://cdn.pixabay.com/video/2022/07/20/124829-732633113_tiny.mp4"
+                        <video src="/images/belunno-video.mp4"
                             className="object-fill rounded-3xl w-full h-[80%] border-white border-4 md:w-[100%] md:h-[80%]"
-                            autoPlay
-                            muted
+                            controls
                             loop
                             playsInline></video>
                     </div>

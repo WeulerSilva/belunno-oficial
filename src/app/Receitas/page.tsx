@@ -7,6 +7,7 @@ import { SendRecipiesModal } from "../components/SendRecipiesModal";
 interface Recipe {
     name: string;
     product: string;
+    img?: string;
     prep_time: string; // ou number, dependendo de como você está armazenando o tempo
     prep_tm: string;
     complexity: string;
@@ -133,6 +134,7 @@ export default function Page() {
                                     <select value={occasion} onChange={(e) => setOccasion(e.target.value)} className="p-2 rounded-lg w-full text-black">
                                         <option value="">Ocasião</option>
                                         <option value="Café da manhã">Café da manhã</option>
+                                        <option value="Lanche">Lanche</option>
                                         <option value="Almoço">Almoço</option>
                                         <option value="Jantar">Jantar</option>
                                         <option value="Happy hour">Happy hour</option>
@@ -196,7 +198,7 @@ export default function Page() {
                             {filteredRecipes.slice(visibleRecipes, visibleRecipes + 3).map((recipe, index) => (
                                 <div key={index} className="w-[33%] h-full border-white border-8 my-6 shadow-md text-black flex 
                                 flex-col justify-center items-center">
-                                    <div className="w-full h-[200px] bg-blue-300 bg-recipies bg-cover bg-center bg-no-repeat ">{/*Imagens*/}</div>
+                                    <div className={`w-full h-[200px] bg-blue-300 ${recipe.img ? recipe.img : "bg-recipies"} bg-cover bg-center bg-no-repeat `}>{/*Imagens*/}</div>
                                     <h3 className="w-full font-bold text-xl text bg-laranja text-center h-[70px] 
                                         flex justify-center items-center">{recipe.name}</h3>
                                     <div className="w-full flex justify-center items-center p py-4 flex-col">
@@ -220,7 +222,7 @@ export default function Page() {
                             {filteredRecipes.slice(visibleRecipes, visibleRecipes + 2).map((recipe, index) => (
                                 <div key={index} className="w-[48%] h-full border-white border-8 my-6 shadow-md text-black flex 
                                     flex-col justify-center items-center">
-                                    <div className="w-full h-[200px] bg-blue-300 bg-recipies bg-cover bg-center bg-no-repeat">{/*Imagens*/}</div>
+                                    <div className={`w-full h-[200px] bg-blue-300 ${recipe.img ? recipe.img : "bg-recipies"} bg-cover bg-center bg-no-repeat`}>{/*Imagens*/}</div>
                                     <h3 className="w-full font-bold text-lg text bg-laranja text-center h-[80px] 
                                         flex justify-center items-center px-2">{recipe.name}</h3>
                                     <div className="w-full flex justify-center items-center py-4 space-y-2 flex-col">
@@ -243,7 +245,7 @@ export default function Page() {
                             {filteredRecipes.slice(visibleRecipes, visibleRecipes + 1).map((recipe, index) => (
                                 <div key={index} className="w-full h-full border-white border-8 my-6 shadow-md text-black flex 
                                 flex-col justify-center items-center">
-                                    <div className="w-full h-[200px] bg-blue-300 bg-recipies bg-cover bg-center bg-no-repeat">{/*Imagens*/}</div>
+                                    <div className={`w-full h-[200px] bg-blue-300 ${recipe.img ? recipe.img : "bg-recipies"} bg-cover bg-center bg-no-repeat`}>{/*Imagens*/}</div>
                                     <h3 className="w-full font-bold text-lg text bg-laranja text-center h-[100px] 
                                         flex justify-center items-center">{recipe.name}</h3>
                                     <div className="w-full flex justify-center items-center py-4 space-y-2 flex-col">

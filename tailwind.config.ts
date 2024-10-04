@@ -84,9 +84,13 @@ const config: Config = {
         "banner-p-10-m": "url('/images/banner-p-10-m.png')",
         "pizza-hand": "url('/images/pizza-hand.jpg')",
         "recipies": "url('/images/recipes.png')",
+        "r-farofa": "url('/images/r-farofa.jpg')",
       }
     },
   },
+  safelist: [
+    "bg-r-farofa"
+  ],
   plugins: [],
 };
 export default config;

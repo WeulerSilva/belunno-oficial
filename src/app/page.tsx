@@ -65,7 +65,7 @@ export default function Home() {
           <div className="w-full h-full px-4 md:px-0">
             <h1 className=" font-bold text-vermelho font-amsi mb-6 pt-10 text-3xl 2xl:text-5xl">Qualidade, Sabor e Tradição desde 2007!</h1>
 
-            <p className="font-gothan text-black text-xl text-justify mb-6">Desde 2007, a Belunno é sinônimo de excelência na produção de
+            <p className="font-gothan text-black text-xl text-justify mb-6">2007, a Belunno é sinônimo de excelência na produção de
               embutidos de carne suína. Nosso compromisso com a qualidade e
               tradição faz de cada produto uma experiência única. Certificados
               pelo SIF (Selo de Inspeção Federal), nossos produtos são

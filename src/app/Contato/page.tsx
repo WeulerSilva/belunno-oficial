@@ -121,6 +121,22 @@ export default function Page() {
                 </div>
             </section>
 
+            <div className="w-full flex justify-center items-center bg-laranja py-4">
+                <div className="w-[90%] h-full flex justify-start items-center bg-laranja space-y-4 text-black flex-col pt-2
+                lg:justify-start lg:flex-row lg:items-start lg:space-y-0 lg:space-x-14 lg:w-[90%] lg:pt-2 xl:w-[80%]">
+                    <div className="flex flex-col text-center lg:text-left">
+                        <span className="text-vermelho font-semibold text-lg md:text-xl xl:text-2xl">Representante Comercial</span>
+                        <span className="text-[14px] font-semibold text-black xl:text-xl">Halex Sulivan</span>
+                    </div>
+
+                    <div className="font-semibold flex flex-col items-center lg:items-end">
+                        <a href="mailto:halexsulivan@hotmail.com" title="Email" className="text-xl">halexsulivan@hotmail.com</a>
+                        <span className="text-xl">+55 (91) 99177 9677</span>
+                    </div>
+                </div>
+            </div>
+
+
             <div className='w-screen h-full bg-laranja'>
                 <DynamicMap />
             </div>

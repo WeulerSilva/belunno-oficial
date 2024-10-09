@@ -9,16 +9,16 @@ export default function Page() {
 
 
     const logos = [
-        "bg-logo-1",
+        "bg-logo-4",
         "bg-logo-3",
         "bg-logo-5",
-        "bg-logo-2",
-        "bg-logo-4",
         "bg-logo-6",
-        "bg-logo-7",
-        "bg-logo-8",
+        "bg-logo-2",
         "bg-logo-9",
-        "bg-logo-10"
+        "bg-logo-1",
+        "bg-logo-10",
+        "bg-logo-8",
+        {/*"bg-logo-7"*/}
     ];
 
 
@@ -141,18 +141,18 @@ export default function Page() {
             {/* Exibição do banner */}
             <Link className="w-full h-full flex justify-center items-center" href={'/Receitas'}>
                 <div
-                    className={`w-full h-[1100px] bg-laranja bg-cover bg-center bg-no-repeat relative cursor-pointer
-            z-40 md:bg-contain md:bg-top md:h-[445px] lg:h-[630px] xl:h-[833px] xl:bg-cover 2xl:h-[1100px]
-            ${changeBanner === 0 ? 'bg-banner-p-1-m md:bg-banner-p-1' : ''}
+                    className={`w-full h-[11px] bg-vermelho bg-cover bg-center bg-no-repeat relative cursor-pointer
+            z-40 em:bg-contain md:bg-laranja md:bg-contain md:bg-top md:h-[445px] lg:bg-cover lg:h-[730px] xl:h-[860px]
+             xl:bg-cover 2xl:h-[1100px]
+            ${changeBanner === 0 ? 'bg-banner-p-4-m md:bg-banner-p-4' : ''}
           ${changeBanner === 1 ? 'bg-banner-p-3-m md:bg-banner-p-3' : ''}
           ${changeBanner === 2 ? 'bg-banner-p-5-m md:bg-banner-p-5' : ''}
-          ${changeBanner === 3 ? 'bg-banner-p-2-m md:bg-banner-p-2' : ''}
-          ${changeBanner === 4 ? 'bg-banner-p-4-m md:bg-banner-p-4' : ''}
-          ${changeBanner === 5 ? 'bg-banner-p-6-m md:bg-banner-p-6' : ''}
-          ${changeBanner === 6 ? 'bg-banner-p-7-m md:bg-banner-p-7' : ''}
-          ${changeBanner === 7 ? 'bg-banner-p-8-m md:bg-banner-p-8' : ''}
-          ${changeBanner === 8 ? 'bg-banner-p-9-m md:bg-banner-p-9' : ''}
-          ${changeBanner === 9 ? 'bg-banner-p-10-m md:bg-banner-p-10' : ''}
+          ${changeBanner === 3 ? 'bg-banner-p-6-m md:bg-banner-p-6' : ''}
+          ${changeBanner === 4 ? 'bg-banner-p-2-m md:bg-banner-p-2' : ''}
+          ${changeBanner === 5 ? 'bg-banner-p-9-m md:bg-banner-p-9' : ''}
+          ${changeBanner === 6 ? 'bg-banner-p-1-m md:bg-banner-p-1' : ''}
+          ${changeBanner === 7 ? 'bg-banner-p-10-m md:bg-banner-p-10' : ''}
+          ${changeBanner === 8 ? 'bg-banner-p-8-m md:bg-banner-p-8' : ''}
       `}
                 >
                 </div>

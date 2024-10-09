@@ -19,6 +19,9 @@ const config: Config = {
         "laranja": "#FFD500",
         "vermelho": "#E30A16"
       },
+      screens: {
+        'em': '424px', // Define o breakpoint para 440px
+      },
       backgroundImage: {
         "belunne": "url('/images/belunno-logo.svg')",
         "first-line": "url('/images/first-line.svg')",
@@ -28,7 +31,7 @@ const config: Config = {
         "four-red": "url('/images/four-red.png')",
         "caminhao": "url('/images/caminhao.jpg')",
         "caminhao-icon": "url('/images/caminhao-icon.png')",
-        "home-img": "url('/images/home-img.png')",
+        "home-img": "url('/images/home-img.jpg')",
         "food-home": "url('/images/food-home.png')",
         "food-p": "url('/images/food-p.png')",
         "pig": "url('/images/pig.png')",

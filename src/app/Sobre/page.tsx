@@ -10,7 +10,7 @@ export default function Page() {
                 <div className="w-[90%] h-full flex justify-between items-center flex-col lg:w-[80%] md:flex-row">
                     <div className="w-[100%] h-full text-white flex justify-center items-start space-y-4 flex-col 
                 mt-4 md:w-[40%]">
-                        <h2 className="text-xl font-bold md:text-xl xl:text-3xl">Nossa História e Compromisso</h2>
+                        <h2 className="text-xl font-bold text-laranja md:text-xl xl:text-3xl">Nossa História e Compromisso</h2>
                         <p className="text-base md:text-lg text-justify xl:text-xl">A Belunno é sinônimo de tradição e qualidade no mercado de
                             embutidos suínos. Desde a nossa fundação, buscamos
                             proporcionar momentos inesquecíveis com sabores
@@ -94,7 +94,7 @@ export default function Page() {
             <div className="w-screen h-full bg-white flex justify-center items-center text-gray-800 font-semibold
                 py-4 lg:items-start lg:h-[290px] xl:h-full">
                 <div className="w-[90%] h-full flex justify-center items-start pt-2 flex-col space-y-4
-                    md:space-y-8 md:items-center md:pt-10 lg:items-start lg:space-y-0 lg:flex-row lg:justify-between lg:w-[80%]">
+                    md:space-y-8 md:items-center md:py-8 lg:items-start lg:space-y-0 lg:flex-row lg:justify-between lg:w-[80%]">
                     <div className="flex flex-col md:w-[80%] lg:w-[30%]">
                         <h2 className="text-vermelho text-xl font-bold md:text-2xl xl:text-4xl">Missão:</h2>
                         <p className="text-base text-justify lg:text-left md:text-[14px] xl:text-xl">Proporcionar momentos especiais com
@@ -127,7 +127,7 @@ export default function Page() {
                         Quer saber mais sobre o que nos torna especiais?</h2>
                     <p className="text-gray-700 text-base md:text-lg lg:text-[14px] xl:text-lg 2xl:text-lg">
                         Entre em contato conosco e descubra o que faz <br/>da Belunno a marca preferida no Norte do Brasil.</p>
-                    <AboutSpan link="/Contato" text="Contato" style="bg-vermelho text-base text-white hover:bg-laranja hover:text-black"/>
+                    <AboutSpan link="/Contato" text="Contato" style="bg-vermelho text-[14px] py-1 text-white hover:bg-laranja hover:text-black"/>
                 </div>
             </div>
         </>

@@ -65,14 +65,14 @@ export default function Home() {
           <div className="w-full h-full px-4 md:px-0">
             <h1 className=" font-bold text-vermelho font-amsi mb-6 pt-10 text-3xl 2xl:text-5xl">Qualidade, Sabor e Tradição desde 2007!</h1>
 
-            <p className="font-gothan text-black text-xl text-justify mb-6">2007, a Belunno é sinônimo de excelência na produção de
+            <p className="font-gothan text-black text-xl text-justify mb-6">Desde 2007, a Belunno é sinônimo de excelência na produção de
               embutidos de carne suína. Nosso compromisso com a qualidade e
               tradição faz de cada produto uma experiência única. Certificados
-              pelo SIF (Selo de Inspeção Federal), nossos produtos são
+              pelo SIF (Serviço de Inspeção Federal), nossos produtos são
               rigorosamente inspecionados para garantir a segurança e a
               satisfação dos nossos consumidores.</p>
 
-            <AboutSpan link="/Sobre" text="Saiba mais" style="bg-vermelho text-white text-[12px] py-1"/>
+            <AboutSpan link="/Sobre" text="Saiba mais" style="bg-vermelho text-white text-[14px] py-1"/>
           </div>
 
 
@@ -89,7 +89,7 @@ export default function Home() {
         <div className='w-screen h-[330px] bg-orange-50 flex justify-center relative bg-caminhao bg-cover bg-[-300px] bg-no-repeat
                md:bg-center md:h-[400px] 2xl:h-[500px]'>
           <div className="w-full h-full bg-black/80 absolute z-0 md:hidden"></div>
-          <div className="w-[90%] h-full flex justify-start items-center relative z-60 md:w-[80%] 2xl:mt-14">
+          <div className="w-[90%] h-full flex justify-start items-center relative z-60 md:w-[85%] 2xl:mt-14">
             <div className={`w-full h-full flex justify-start items-center flex-col
                          md:w-[50%]`}>
               <div className="w-full h-[90px] flex justify-start items-end mb-4 md:mb-10 md:h-[150px]">
@@ -101,7 +101,7 @@ export default function Home() {
               <p className="w-full font-gothan text-white text-base text-justify mb-4 lg:mb-6 xl:text-lg 2xl:text-xl">A Belunno combina tradição e qualidade para oferecer os melhores embutidos de carne suína. Com ingredientes selecionados e segurança certificada, nossos produtos garantem sabor único e momentos especiais em sua mesa.</p>
 
               <div className="w-full glex justify-start" title="Sobre">
-                <AboutSpan link="/Sobre" text="Saiba mais" style="bg-vermelho text-white text-[12px] hover:bg-laranja hover:text-black 2xl:text-[14px]" />
+                <AboutSpan link="/Sobre" text="Saiba mais" style="bg-vermelho text-white py-1 text-[14px] hover:bg-laranja hover:text-black 2xl:text-[14px]" />
               </div>
 
             </div>
@@ -119,7 +119,7 @@ export default function Home() {
             </div>
             <div className="w-[100%] h-full mt-4 md:pl-[10%] md:w-[50%]">
               <div className="w-full h-[90px] flex justify-start items-end mb-4 md:h-[100px]">
-                <h1 className="text-xl font-bold text-laranja font-amsi pr-6 xl:text-3xl 2xl:text-5xl">Produtos certificados pelo
+                <h1 className="text-xl font-bold text-laranja font-amsi pr-6 xl:text-3xl 2xl:text-4xl">Produtos certificados pelo
                   SIF, garantia de excelência.</h1>
                 <span className="w-[50px] h-[50px] bg-cover bg-center bg-no-repeat 
                               md:w-[70px] md:h-[70px] lg:w-[100px] lg:h-[100px] 2xl:w-[100px] 2xl:h-[100px]"></span>
@@ -146,7 +146,7 @@ export default function Home() {
                 <p className="w-full font-gothan text-black text-base text-justify mb-4 lg:mb-6 xl:text-lg 2xl:text-xl">Inspire-se com receitas que trazem o sabor autêntico do Norte à sua mesa, usando os embutidos de alta qualidade da Belunno. Transforme cada refeição em um momento especial.</p>
 
                 <div className="w-full justify-start absolute top-[250px] z-10 md:top-[320px] lg:top-[300px]" title="Receitas">
-                  <AboutSpan link="/Receitas" text="Saiba mais" style="bg-vermelho text-white text-[12px] 2xl:text-[14px]" />
+                  <AboutSpan link="/Receitas" text="Saiba mais" style="bg-vermelho py-1 text-white text-[14px] 2xl:text-[14px]" />
                 </div>
 
               </div>

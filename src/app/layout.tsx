@@ -19,9 +19,9 @@ export const metadata: Metadata = {
 
 
   viewport: "width=device-width, initial-scale=1.0",
-  title: "Belunno - Qualidade, Sabor e Tradição",
-  description: "Desde 2007, a Belunno é sinônimo de excelência na produção de embutidos de carne suína. Nosso compromisso com a qualidade e tradição faz de cada produto uma experiência única. Certificados pelo SIF (Selo de Inspeção Federal), nossos produtos são rigorosamente inspecionados para garantir a segurança e a satisfação dos nossos consumidores.",
-  keywords: 'Embutidos de Carne Suína, Qualidade, Tradição, SIF, Segurança Alimentar, Produção Sustentável, Produtos Certificados, Belunno, Embutido cozido de suíno, linguiça toscana,linguiça para churrasco, linguiça fininha,linguiça toscana apimentada, calabresa, lombo suino, salaminho, copa defumada',
+  title: "Belunno - Embutidos de Qualidade, Sabor e Tradição",
+  description: "Descubra os embutidos suínos de alta qualidade da Belunno, desenvolvidos para os consumidores mais exigentes. Líder no Norte do Brasil, oferecemos uma linha completa de produtos para churrasco, restaurantes e atacado. Saiba mais sobre nossas ofertas e condições especiais.",
+  keywords: 'Embutidos de Carne Suína, Qualidade, Tradição, SIF, Segurança Alimentar, Produção Sustentável, Produtos Certificados, Belunno, Embutido cozido de suíno, linguiça toscana,linguiça para churrasco, linguiça fininha,linguiça toscana apimentada, calabresa, lombo suino, salaminho, copa defumadaBelunno embutidos suínos,Linguiça Toscana Belunno,Linguiça Apimentada Belunno,Embutidos Belunno para churrasco,Embutidos suínos no Norte do Brasil,Distribuição de embutidos no Pará,Linguiça para churrasco Belunno,Fornecedores de embutidos no Maranhão,Produtos suínos Belunno,Distribuição de embutidos no Nordeste,Linguiça Calabresa Belunno,Embutidos artesanais Belunno,Linguiça Fininha Belunno,Carne suína embutida Belunno,Parcerias comerciais com a Belunno,Linguiça para atacado,Embutidos para restaurantes Belunno,Qualidade em embutidos Belunno,Distribuição de embutidos Belunno,Embutidos no Piauí,Linguiça Toscana tradicional Belunno,Embutidos regionais do Norte,Fornecedores de carne suína Maranhão,Comércio de embutidos Belunno,Parcerias de distribuição Belunno,Linguiça para atacadistas no Brasil,Linguiça suína para negócios Belunno,Belunno no mercado de embutidos,Melhores embutidos para churrasco,Embutidos suínos no Pará,Embutidos Belunno para distribuidores,Produtos de carne suína Belunno ,Distribuição de linguiça Toscana no Norte',
   robots: {
     index: true,
     follow: true
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://belunno.com.br",
-    title: "Belunno - Qualidade, Sabor e Tradição",
-    description: "Desde 2007, a Belunno é sinônimo de excelência na produção de embutidos de carne suína. Nosso compromisso com a qualidade e tradição faz de cada produto uma experiência única. Certificados pelo SIF (Selo de Inspeção Federal), nossos produtos são rigorosamente inspecionados para garantir a segurança e a satisfação dos nossos consumidores.",
+    title: "BBelunno - Embutidos de Qualidade, Sabor e Tradição",
+    description: "Descubra os embutidos suínos de alta qualidade da Belunno, desenvolvidos para os consumidores mais exigentes. Líder no Norte do Brasil, oferecemos uma linha completa de produtos para churrasco, restaurantes e atacado. Saiba mais sobre nossas ofertas e condições especiais.",
     siteName: "Belunno",
     images: [{
       url: "/images/pig2.png",
@@ -42,11 +42,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@belunno",
     creator: "@belunno",
-    title: "Belunno - Qualidade, Sabor e Tradição",
-    description: "Descubra como a Waveseg® está revolucionando o mercado de piscinas de ondas com tecnologia sustentável e personalizável, proporcionando experiências de surf únicas e inovadoras.",
+    title: "Belunno - Embutidos de Qualidade, Sabor e Tradição",
+    description: "Descubra os embutidos suínos de alta qualidade da Belunno, desenvolvidos para os consumidores mais exigentes. Líder no Norte do Brasil, oferecemos uma linha completa de produtos para churrasco, restaurantes e atacado. Saiba mais sobre nossas ofertas e condições especiais.",
     images: [{
       url: "/images/pig2.png",
-      alt: "Belunno - Qualidade, Sabor e Tradição®"
+      alt: "Belunno – Embutidos de Qualidade, Sabor e Tradição"
     }]
   }
 };

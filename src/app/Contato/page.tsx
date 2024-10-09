@@ -130,8 +130,9 @@ export default function Page() {
                     </div>
 
                     <div className="font-semibold flex flex-col items-center lg:items-end">
-                        <a href="mailto:halexsulivan@hotmail.com" title="Email" className="text-xl">halexsulivan@hotmail.com</a>
-                        <span className="text-xl">+55 (91) 99177 9677</span>
+                        <a href="mailto:halexsulivan@hotmail.com" title="Email" className="text-lg">halexsulivan@hotmail.com</a>
+                        <a href="https://wa.me/5591991779677?text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20da%20Belunno" 
+                        className="text-base">+55 (91) 99177 9677</a>
                     </div>
                 </div>
             </div>
